@@ -1,0 +1,83 @@
+
+:root{
+    --cor01:#65B4C2;
+    --cor02:#08A6C2;
+    --cor03:#2F808F;
+    --cor04:#056475;
+    --cor05:#033942;
+
+}
+
+body{
+    font-family: "Poppins, Arial, sans-serif";
+    margin: 0;
+}
+
+header{
+    text-align: right;
+    margin-right: 50px;
+    padding: 5px;
+    background-color: var(--cor04);
+    color: white;
+}
+
+header span{
+    padding: 10px;
+    font-weight: bold;
+    color: var(--cor05);
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+main{
+    margin-top: 100px;
+    margin: auto;
+    width: 70%;
+}
+
+main h1{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+main h2{
+    font-size: 18px;
+}
+
+main img{
+    width: 20px;
+    height: 20px;
+}
+
+main #foto-perfil{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#box-perfil{
+    padding-left: 350px;
+    margin-top: -200px; 
+    
+}
+
+#box-apresentacao{
+    max-width: 300px;
+    
+}
+main span{
+    padding-right: 10px;
+}
+
+button{
+    padding: 10px;
+    background-color: #056475;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+
+footer{}
+
