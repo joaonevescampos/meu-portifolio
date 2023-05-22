@@ -40,6 +40,8 @@ header span{
 /* ======= MAIN =======*/
 main{
     margin: 0;
+    min-width: 300px;
+    
 }
 
 main h1{
@@ -48,11 +50,11 @@ main h1{
 }
 
 main h2{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 main p{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* ======= HOME =======*/
@@ -109,6 +111,15 @@ main p{
 
 
     
+}
+
+a{
+    text-decoration: none ;
+    color: var(--cor02);
+}
+
+a:hover{
+    color: #033942;
 }
 
 .botao a{
