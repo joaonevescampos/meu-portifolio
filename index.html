@@ -29,9 +29,9 @@
                         <h1>Olá, sou o <span class="texto-destaque">João Campos</span>!</h1>
                         <h2>Desenvolvedor Frontend Júnior.</h2>
                     </div>
-                    <div class="botao-div">
+                    <!-- <div class="botao-div">
                         <button class="botao"><a href="#">Contato</a></button>
-                    </div>
+                    </div> -->
                     <div class="redes-sociais">
                         <img src="imagens/github-icon-100.png" alt="">
                         <img src="imagens/linkedin-icon-100.png" alt="">
@@ -41,17 +41,18 @@
             </div>
         </section>
         <section id="sobre"></section>
-        <h1 class="titulo">Sobre</h1>
-            <div class="box-conteudo">
+        
+            <div class="box-conteudo" id="box-sobre">
+                <h1 class="titulo" id="titulo-especial">Sobre</h1>
                 <p>Meu nome é João, tenho 25 anos, formado em engenharia química em 2021. No entanto, não segui essa profissão, pois decidi correr atrás do que eu realmente amo que é a área de tecnologia. Desde então, me dediquei para aprender as tecnologias Frontend. Hoje, me sinto preparado para atuar como desenvolvedor frontend júnior. </p>
-                <img src="imagens/paisagem-400.jpg" alt="foto-sobre">
 
-                <button class="botao" id="botao-cv"><a href="#">Baixar CV</a></button>
+                <div class="botao-div"><button class="botao" id="botao-cv"><a href="#">Baixar CV</a></button></div>
             </div>
 
         <section></section>
-        <h1 class="titulo">Projetos</h1>
+        
         <div class="box-conteudo" id="projetos">
+            <h1 class="titulo">Projetos</h1>
 
             <h1 class="titulo-projeto">Site Pokédex</h1>
 
@@ -64,8 +65,9 @@
         
 
             <div class="box-conteudo">
-                <h1 class="titulo-projeto">Site Android</h1>
+                
                 <div class="projeto">
+                    <h1 class="titulo-projeto">Site Android</h1>
                     <img src="imagens/projeto-android.PNG" alt="projeto-android">
                     <p class="descricao-projeto">Foram utilizados conhecimentos básicos de HTML e CSS para fazer esse projeto. <strong>Clique na imagem para ver o projeto.</strong></p>
                 </div>
@@ -73,6 +75,7 @@
 
             <div class="box-conteudo">
                 <h1 class="titulo-projeto">Jogo da cobrinha</h1>
+                
                 <div class="projeto"><img src="imagens/snake-game3.gif" alt="jogo-da-cobrinha"></div>
                 <div class="descricao-projeto">
                     <p>Quem não conhece o joguinho da cobrinha? Esse simples jogo nostáugico foi desenvolvido em Python. <strong>Confira o código do game</strong></p>
@@ -88,7 +91,7 @@
             </div>
     </main>
     <footer>
-        <p>Criado por João Campos</p>
+        <p>Criado por <strong>João Campos</strong></p>
     </footer> 
 </body>
 </html>

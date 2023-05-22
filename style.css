@@ -42,9 +42,13 @@ main{
     margin: 0;
 }
 
-main h1, h2{
+main h1{
     font-size: 20px;
     margin: 10px;
+}
+
+main h2{
+    font-size: 16px;
 }
 
 main p{
@@ -134,38 +138,41 @@ main p{
 
 .redes-sociais img:hover{
     width: 25px;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 /* ======= SOBRE =======*/
 
 .titulo{
-    text-align: center;
     color: #021d22;
+}
+
+#titulo-especial{
+    color: white;
 }
 
 .titulo-projeto{
     text-align: center;
-    color: white;
+    color: #021d22;
+    font-size: 25px;
 }
 .box-conteudo{
     width: 80%;
     max-width: 800px;
     margin: auto;
     text-align: justify;
-    color: white;
-    background-color: var(--cor05);
+    color: #021d22;
+    background-color: white;
     padding: 10px;
     border: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px #00000050;
     height: 10%;
     margin-bottom: 20px;
 }
 
 .box-conteudo img{
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -173,20 +180,30 @@ main p{
     
 }
 
+#box-sobre{
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor01));
+    /* border: solid 10px var(--cor05); */
+    color: white;
+}
 .projeto img{
     width: 100%;
     margin: auto;
     margin-top: 20px;
-    border: solid 10px black;
-    margin-left: -10px;
-    
+    border: solid 5px var(--cor05);
+    border-radius: 20px;
+    margin-left: -10px;   
 }
-#botao-cv{
+
+#img-paisagem{
+    max-width: 400px;
+}
+
+/* #botao-cv{
     background-color: var(--cor02);
     margin: 20px;
     max-width: 400px;
     text-align: center;
-}
+} */
 
 
 
