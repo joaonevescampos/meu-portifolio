@@ -64,7 +64,7 @@ main p{
 
 #foto-perfil{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     width: 70%;
     max-width: 300px;
@@ -75,7 +75,7 @@ main p{
 .box-home-texto{
     text-align: center;
     margin: auto;
-    margin-top: 400px;
+    margin-top: 350px;
 }
 
 .box-home-texto h1, h2{
@@ -221,7 +221,7 @@ footer{
 }
 footer > p{
     text-align: center;
-    font-size: 400;
+    font-size: 12px;
 
 }
 
