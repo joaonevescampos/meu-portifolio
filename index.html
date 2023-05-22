@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portifólio - João</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,36 +13,48 @@
         <nav>
             <p>
                 <span>Home</span>
-                <span>Sobre mim</span>
-                <span>Skills</span>
-                <span>Portifólio</span>
-                <span>Contato</span>
+                <span>Sobre</span>
+                <span>Projetos</span>
             </p>
         </nav>
     </header>
     <main>
-        <article>
-            <section id="sobre-mim">
-                <div id="box-apresentacao">
-                    <h1>Olá, me chamo João!</h1>
-                    <h2>Frontend developer</h2>
-                    <p>Desenvolvedor júnior apaixonado por tecnologias web.</p>
-                    <p><button>Entre em contato</button></p>
-                    <span><img src="imagens/github-icon-100.png" alt="github-icon"></span>
-                    <span><img src="imagens/linkedin-icon-100.png" alt="linkedin-icon"></span>
-                    <span><img src="imagens/whatsapp-icon-100.png" alt="whatsapp-icon"></span>
-                </div>
-                <div id="box-perfil">
+        <section id="home">
+            
+            <div class="box-home">
+                <div class="box-home-img">
                     <img src="imagens/perfil-portifolio-250.png" alt="perfil" id="foto-perfil">
                 </div>
-            </section>
-            
-            <section id="skills"></section>
-            <section id="formação"></section>
-            <section id="portifólio"></section>
-            <section id="contato"></section>
-        </article>
+                    <div class="box-home-texto">
+                        <h1>Olá, sou o <span class="texto-destaque">João Campos</span>!</h1>
+                        <h2>Desenvolvedor Frontend Júnior.</h2>
+                    </div>
+                    <div class="botao-div">
+                        <button class="botao"><a href="#">Contato</a></button>
+                    </div>
+                    <div class="redes-sociais">
+                        <img src="imagens/github-icon-100.png" alt="">
+                        <img src="imagens/linkedin-icon-100.png" alt="">
+                        <img src="imagens/whatsapp-icon-100.png" alt="">
+                        
+                    </div>
+            </div>
+        </section>
+        <section id="sobre"></section>
+        <h1 class="titulo">Sobre</h1>
+            <div class="box-sobre">
+                <p>Meu nome é João, tenho 25 anos, formado em engenharia química em 2021. No entanto, não segui essa profissão, pois decidi correr atrás do que eu realmente amo que é a área de tecnologia. Desde então, me dediquei para aprender as tecnologias Frontend. Hoje, me sinto preparado para atuar como desenvolvedor frontend júnior. </p>
+                <img src="imagens/paisagem-400.jpg" alt="foto-sobre">
+            </div>
+
+        <section id="projetos"></section>
+        <div>
+            <h1 class="titulo">Projetos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae saepe dolorum vel in voluptas odio suscipit facilis expedita alias nesciunt, reprehenderit odit molestias temporibus minus veniam hic nisi eaque recusandae?</p>
+        </div>
     </main>
-    <footer></footer> 
+    <footer>
+        <p>Criado por João Campos</p>
+    </footer> 
 </body>
 </html>
