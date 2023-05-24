@@ -7,14 +7,15 @@
     <title>Portifólio - João</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
             <p>
-                <span>Home</span>
-                <span>Sobre</span>
-                <span>Projetos</span>
+                <span><a href="#home">Home</a></span>
+                <span><a href="#sobre">Sobre</a></span>
+                <span><a href="#projetos">Projetos</a></span>
             </p>
         </nav>
     </header>
@@ -29,13 +30,10 @@
                         <h1>Olá, sou o <span class="texto-destaque">João Campos</span>!</h1>
                         <h2>Desenvolvedor Frontend Júnior.</h2>
                     </div>
-                    <!-- <div class="botao-div">
-                        <button class="botao"><a href="#">Contato</a></button>
-                    </div> -->
                     <div class="redes-sociais">
-                        <img src="imagens/github-icon-100.png" alt="">
-                        <img src="imagens/linkedin-icon-100.png" alt="">
-                        <img src="imagens/whatsapp-icon-100.png" alt="">
+                        <a href="https://github.com/joaonevescampos" target="_blank"><img src="imagens/github-icon-100.png" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank"><img src="imagens/linkedin-icon-100.png" alt="linkedin"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portif%C3%B3lio%20e%20me%20interessei%20pelo%20seu%20trabalho!" target="_blank"><img src="imagens/whatsapp-icon-100.png" alt="whatsapp"></a>
                         
                     </div>
             </div>
@@ -46,58 +44,52 @@
                 <h1 class="titulo" id="titulo-especial">Sobre</h1>
                 <p>Meu nome é João, tenho 25 anos, formado em engenharia química em 2021. No entanto, não segui essa profissão, pois decidi correr atrás do que eu realmente amo que é a área de tecnologia. Desde então, me dediquei para aprender as tecnologias Frontend. Hoje, me sinto preparado para atuar como desenvolvedor frontend júnior. </p>
 
-                <div class="botao-div"><button class="botao" id="botao-cv"><a href="#">Baixar CV</a></button></div>
+                <div class="botao-div"><button class="botao" id="botao-cv"><a href="documentos/currículo - João Victor Neves Campos de Jesus.pdf" target="_blank">Baixar CV</a></button></div>
             </div>
 
-        <section></section>
-        
-        <div class="box-conteudo" id="projetos">
-            <h1 class="titulo">Projetos</h1>
-
-            <h1 class="titulo-projeto">Site Pokédex</h1>
-
-            <div class="projeto">
-                <a href="#"><img src="imagens/projeto-pokedex.PNG" alt="projeto-pokedex"></a>
-            </div>
-
-            <div class="descricao-projeto">
-                <p>O site pokedex é um projeto construido utilizando as linguagens HTML, CSS e JavaScript. <strong><a href="#">Clique na imagem para ver o projeto.</a></strong> </p>
-            </div>
-        </div>
-        
-
-            <div class="box-conteudo">
-                
+        <section id="projetos">
+            <div class="box-conteudo" id="projetos">
+                <h1 class="titulo">Projetos</h1>
+                <h1 class="titulo-projeto">Site Pokédex</h1>
                 <div class="projeto">
-                    <h1 class="titulo-projeto">Site Android</h1>
-                    <a href="#"><img src="imagens/projeto-android.PNG" alt="projeto-android"></a>
-                    <p class="descricao-projeto">Trata-se de um site completo que diz a respeito da história do mascote android e suas curiosidades. Foram utilizados conhecimentos básicos de HTML e CSS para fazer esse projeto. <strong><a href="">Clique na imagem para ver o projeto.</a></strong></p>
-                </div>
-            </div>
-
-            <div class="box-conteudo">
-                <h1 class="titulo-projeto">Jogo da cobrinha</h1>
-                
-                <div class="projeto">
-                    <a href="#"><img src="imagens/snake-game3.gif" alt="jogo-da-cobrinha"></a>
+                    <a href="https://joaonevescampos.github.io/projeto-pokedex/" target="_blank"><img src="imagens/projeto-pokedex.PNG" alt="projeto-pokedex"></a>
                 </div>
                 <div class="descricao-projeto">
-                    <p>Quem não conhece o joguinho da cobrinha? Esse simples jogo nostáugico foi desenvolvido em Python. <strong><a href="#">Confira o código do game</a></strong></p>
+                    <p>O site pokedex é um projeto construido utilizando as linguagens HTML, CSS e JavaScript. <strong><a href="https://joaonevescampos.github.io/projeto-pokedex/" target="_blank">Clique na imagem para ver o projeto.</a></strong> </p>
                 </div>
             </div>
-
-            <div class="box-conteudo">
-                <h1 class="titulo-projeto">Relatório de vendas</h1>
-                <div class="projeto">
-                    <a href="#"><img src="imagens/projeto-relatorio-de-vendas.jpeg" alt="projeto-relatorio-de-vendas"></a>
+            
+                <div class="box-conteudo">
+            
+                    <div class="projeto">
+                        <h1 class="titulo-projeto">Site Android</h1>
+                        <a href="https://joaonevescampos.github.io/meu-primeiro-site-android/" target="_blank"><img src="imagens/projeto-android.PNG" alt="projeto-android"></a>
+                        <p class="descricao-projeto">Trata-se de um site completo que diz a respeito da história do mascote android e suas curiosidades. Foram utilizados conhecimentos básicos de HTML e CSS para fazer esse projeto. <strong><a href="https://joaonevescampos.github.io/meu-primeiro-site-android/" target="_blank">Clique na imagem para ver o projeto.</a></strong></p>
+                    </div>
                 </div>
-                <div class="descricao-projeto">
-                    <p>Este projeto organiza e analisa uma extensa base de dados do Excel com os nome de produtos, preços e quantidades de 25 lojas diferentes. É feito um código em Python que organiza os dados e envia um relatório  para o e-mail desejado, em forma de tabela, com o faturamento total, ticket médio e quantidade de produtos vendidos por cada loja. <strong><a href="#">Confira o código do projeto.</a></strong></p>
+                <div class="box-conteudo">
+                    <h1 class="titulo-projeto">Jogo da cobrinha</h1>
+            
+                    <div class="projeto">
+                        <a href="https://github.com/joaonevescampos/projeto-jogo-da-cobrinha" target="_blank"><img src="imagens/snake-game3.gif" alt="jogo-da-cobrinha"></a>
+                    </div>
+                    <div class="descricao-projeto">
+                        <p>Quem não conhece o joguinho da cobrinha? Esse simples jogo nostáugico foi desenvolvido em Python. <strong><a href="https://github.com/joaonevescampos/projeto-jogo-da-cobrinha" target="_blank">Confira o código do game</a></strong></p>
+                    </div>
                 </div>
-            </div>
+                <div class="box-conteudo">
+                    <h1 class="titulo-projeto">Relatório de vendas</h1>
+                    <div class="projeto">
+                        <a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"><img src="imagens/projeto-relatorio-de-vendas.jpeg" alt="projeto-relatorio-de-vendas"></a>
+                    </div>
+                    <div class="descricao-projeto">
+                        <p>Este projeto organiza e analisa uma extensa base de dados do Excel com os nome de produtos, preços e quantidades de 25 lojas diferentes. É feito um código em Python que organiza os dados e envia um relatório  para o e-mail desejado, em forma de tabela, com o faturamento total, ticket médio e quantidade de produtos vendidos por cada loja. <strong><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank">Confira o código do projeto.</a></strong></p>
+                    </div>
+                </div>
+        </section>
     </main>
     <footer>
-        <p>Criado por <strong>João Campos</strong></p>
+        <p>Criado por <strong><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank">João Campos</a></strong></p>
         <p>contato: <strong>joaon.c.jv@gmail.com</strong></p>
     </footer> 
 </body>
