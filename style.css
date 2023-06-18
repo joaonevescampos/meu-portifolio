@@ -40,6 +40,15 @@
     padding: 0;
 }
 
+.linha-colorida {
+    border-top: 2px solid #021d22; 
+    height: 5px;
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  
+
 /* ======= BODY =======*/
 
 body{
@@ -135,6 +144,7 @@ main{
     background-color: white;
     font-size: 12px;
     margin: auto;
+    text-align: justify;
 }
 
 main h1{
@@ -173,8 +183,6 @@ main p{
 }
 
 .box-home-texto h1, h2{
-    margin-right: -10%;
-    margin-left: -10%;
     color: #021d22;
 }
 
@@ -296,6 +304,8 @@ a:hover{
     
 }
 
+
+
 .texto-completo{
     display: none;
 }
@@ -334,14 +344,12 @@ a:hover{
     width: 100%;
 }
 
-.hardskills-container{
-    width: 70vw;
+.hardskills-container {
+    width: calc(100% - 40px); /* Subtrai 40px para acomodar as margens laterais */
     max-width: 800px;
     min-width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
+    margin: 30px auto; /* Centraliza horizontalmente */
+  }
 
 
 .skills__container {
@@ -367,7 +375,7 @@ a:hover{
     align-items: center;
     position: relative;
     font-weight: var(--font-semi);
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     margin-bottom: 10px;
     border-radius: .5rem;
     box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -409,7 +417,9 @@ a:hover{
     border-radius: .5rem;
   }
 
-
+.texto-skills{
+    margin-left: 30px;
+}
 
 /* ======= FOOTER =======*/
 footer{
