@@ -15,10 +15,11 @@
         <div class="menu-toggle"></div>
         <nav class="menu">
            <ul>
-            <li><a href="paginas/mandala.html">Mandala</a></li>
-            <li><a href="paginas/sobre.html" id="menu-sobre" data-traducao="menu-sobre">Sobre</a></li>
-            <li><a href="https://linktr.ee/Architect3D" target="_blank" id="menu-contato" data-traducao="menu-contato">Contato</a></li>
-            
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre" id="menu-sobre">Sobre</a></li>
+                <li><a href="#skills">hardSkills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#" target="_blank" id="menu-contato">Contato</a></li>   
            </ul>
         </nav>
           
@@ -47,16 +48,17 @@
         
             <div class="box-conteudo" id="box-sobre">
 
-                
-
                 <h1 class="titulo" id="titulo-especial">Sobre</h1>
                 <p class="texto">Olá, sou João Campos, um engenheiro químico de 25 anos que está embarcando em uma empolgante transição para a profissão de desenvolvedor front-end. Com uma sólida formação em engenharia química, descobri minha verdadeira paixão pela tecnologia web e decidi mergulhar de cabeça nesse novo desafio.</p>
+
+                <div id="fundo-sobre"><img src="imagens/fundo-sobre.png" alt="fundo-sobre"></div>
+
+                <p>Minha jornada no desenvolvimento front-end tem sido inspiradora, e estou sempre em busca de novas oportunidades para aprimorar minhas habilidades e conhecimentos nesse campo em constante evolução. Tenho me dedicado a aprender as linguagens de programação essenciais, como HTML, CSS e JavaScript, e estou animado para expandir meu conhecimento para frameworks e bibliotecas modernas, como React e Node.js.</p>
 
                 <button class="btn-ler-mais"> Ler Mais</button>
 
                     <div class="texto-completo">
-                        <p>Minha jornada no desenvolvimento front-end tem sido inspiradora, e estou sempre em busca de novas oportunidades para aprimorar minhas habilidades e conhecimentos nesse campo em constante evolução. Tenho me dedicado a aprender as linguagens de programação essenciais, como HTML, CSS e JavaScript, e estou animado para expandir meu conhecimento para frameworks e bibliotecas modernas, como React e Node.js.</p>
-                        
+                     
                         <p>O que me motiva é a possibilidade de criar experiências digitais incríveis e envolventes para os usuários, combinando minha formação em engenharia com minhas habilidades criativas. Tenho uma abordagem analítica e orientada a detalhes, que aprimorei ao longo dos anos trabalhando em projetos complexos como engenheiro químico.</p>
                         
                         <p>Estou ansioso para colaborar com equipes talentosas, enfrentar desafios empolgantes e contribuir para o desenvolvimento de soluções web de alto nível. Minha dedicação, entusiasmo e habilidades técnicas são a base para o meu sucesso contínuo nesta nova jornada como desenvolvedor front-end.</p>
@@ -66,28 +68,24 @@
 
                     <button class="btn-diminuir" style="display: none;">Menos</button>
 
-                    <div id="fundo-sobre"><img src="imagens/fundo-sobre.png" alt="fundo-sobre"></div>
+                   
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dignissimos, libero enim cum, nostrum unde aliquam ex sunt ipsum atque consequatur eveniet aut, amet eius eaque ipsam nihil dolorem quia!</p>
+                
 
-                <div class="botao-div"><button class="botao" id="botao-cv"><a href="documentos/currículo - João Victor Neves Campos de Jesus.pdf" target="_blank">Baixar CV</a></button></div>
+            <!-- ------------ SKILLS ------------ -->
+            
+            <div class="fundo-skills">
+                <img src="imagens/fundo-skills.jpg" alt="fundo-skills">
             </div>
 
-            
-
-
             <section class="skills section" id="skills">
-
-                <div class="fundo-skills">
-                    <img src="imagens/fundo-skills.jpg" alt="fundo-skills">
-                </div>
 
                 <div class="skills__container bd-grid">   
                     
                     
                     <div>
                         <h2 class="skills__subtitle"> Hardskills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <p class="skills__text">Possuo um conhecimento básico das linguagens: HTML5, CSS3, JavaScript e Python. Pretendo aperfeiçoar cada vez mais meus conhecimentos nessas tecnologias, e expandir meu conhecimento aprendendo TypeScript, React e Node.js. Estou aberto também para futuramente aprender tecnologias Backend como PHP, Django e SQL, me tornando assim um desenvolvedor Full Stack.</p>
 
 
                         <div class="hardskills-container">
@@ -131,13 +129,21 @@
                     </div>
                 </div>
 
+                <p>Confira meu currículo completo:</p>
+
+                <div class="botao-div"><button class="botao" id="botao-cv"><a href="documentos/currículo - João Victor Neves Campos de Jesus.pdf" target="_blank">Baixar CV</a></button></div>
+            </div>
+
             </section>
 
-            <div>
+           
+
+        <section>
+
+            <div class="container-fundo-projetos">
                 <img src="imagens/fundo-projetos.jpg" alt="fundo-projetos">
             </div>
 
-        <section id="projetos">
             <div class="box-conteudo" id="projetos">
                 <h1 class="titulo">Projetos</h1>
                 <h1 class="titulo-projeto">Site Pokédex</h1>
@@ -179,8 +185,9 @@
         </section>
     </main>
     <footer>
-        <p>Criado por <strong><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank">João Campos</a></strong></p>
-        <p>contato: <strong>joaon.c.jv@gmail.com</strong></p>
+        <p><strong><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank">João Campos</a></strong></p><br>
+        <p>contato: joaon.c.jv@gmail.com</p><br>
+        <p>Copyright © 2023 - João Campos - Todos os direitos reservados</p>
     </footer> 
 
     <script>

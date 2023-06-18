@@ -47,9 +47,7 @@ body{
     font-size: 12px;
     margin: 0;
     max-width: 300;
-    background-color: rgb(224, 223, 223);
-
-
+    background-color: white;
 }
 
 /* ============ MENU ============= */
@@ -85,6 +83,7 @@ body{
   
   .menu.open {
     display: block;
+    width: 100px;
   }
   
   .menu ul {
@@ -95,6 +94,9 @@ body{
   
   .menu li {
     padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
   }
   
   .menu a {
@@ -103,15 +105,20 @@ body{
   }
 
   .menu a:hover{
-    font-weight: 400;
+    font-weight: 700;
+    color: #fff;
   }
 /* ======= HEADER =======*/
 
 header{
+    position: fixed;
     text-align: right;
     padding: 10px;
-    background-color: var(--cor04);
+    background-color: #033942a4;
     color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 999;
 }
 
 header span{
@@ -143,13 +150,14 @@ main h2{
 
 main p{
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* ======= HOME =======*/
 .box-home{
     margin: auto;
-    background-color: rgb(224, 223, 223);
+    background-color: white;
 }
 
 #foto-perfil{
@@ -195,6 +203,7 @@ main p{
     border: none;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 20px;
  
 }
 
@@ -225,16 +234,24 @@ a:hover{
 .redes-sociais{
     margin: auto;
     text-align: center;
+    box-sizing: border-box;
 }
 .redes-sociais img{
-    width: 30px;
-    padding: 10px;
+    width: 35px;
     margin:auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 10px;
+    
 }
 
 .redes-sociais img:hover{
-    width: 25px;
-    transition: 0.8s;
+    transform: scale(2);
+    border: solid 2px var(--cor05);
+    box-shadow: 5px 5px 10px #00000065;
+    transform: translate(-3px, -3px);
+    transition: transform 0.1s, border 0.1s;
 }
 
 /* ======= SOBRE =======*/
@@ -278,6 +295,7 @@ a:hover{
 #box-sobre{
     background-color: white;
     color: black;
+    
 }
 
 .texto-completo{
@@ -308,13 +326,13 @@ a:hover{
 
 /* ===== SKILLS =====*/
 
-.fundo-skills, .fundo-sobre{
+.fundo-skills, .fundo-sobre, .container-fundo-projetos{
     display: flex;
     align-self: center;
     width: 100%;
 }
 
-.fundo-skills > img, .fundo-sobre > img{
+.fundo-skills > img, .fundo-sobre > img, .container-fundo-projetos > img{
     width: 100%;
 }
 
