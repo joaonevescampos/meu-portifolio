@@ -8,23 +8,28 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <nav>
-            <p>
-                <span><a href="#home">Home</a></span>
-                <span><a href="#sobre">Sobre</a></span>
-                <span><a href="#projetos">Projetos</a></span>
-            </p>
+        <div class="menu-toggle"></div>
+        <nav class="menu">
+           <ul>
+            <li><a href="paginas/mandala.html">Mandala</a></li>
+            <li><a href="paginas/sobre.html" id="menu-sobre" data-traducao="menu-sobre">Sobre</a></li>
+            <li><a href="https://linktr.ee/Architect3D" target="_blank" id="menu-contato" data-traducao="menu-contato">Contato</a></li>
+            
+           </ul>
         </nav>
+          
+          
     </header>
     <main>
         <section id="home">
             
             <div class="box-home">
                 <div class="box-home-img">
-                    <img src="imagens/perfil-portifolio-250.png" alt="perfil" id="foto-perfil">
+                    <img src="imagens/perfil-portifolio.png" alt="perfil" id="foto-perfil">
                 </div>
                     <div class="box-home-texto">
                         <h1>Olá, sou o <span class="texto-destaque">João Campos</span>!</h1>
@@ -41,10 +46,95 @@
         <section id="sobre"></section>
         
             <div class="box-conteudo" id="box-sobre">
+
+                
+
                 <h1 class="titulo" id="titulo-especial">Sobre</h1>
-                <p>Meu nome é João, tenho 25 anos, formado em engenharia química em 2021. No entanto, não segui essa profissão, pois decidi correr atrás do que eu realmente amo que é a área de tecnologia. Desde então, me dediquei para aprender as tecnologias Frontend. Hoje, me sinto preparado para atuar como desenvolvedor frontend júnior. </p>
+                <p class="texto">Olá, sou João Campos, um engenheiro químico de 25 anos que está embarcando em uma empolgante transição para a profissão de desenvolvedor front-end. Com uma sólida formação em engenharia química, descobri minha verdadeira paixão pela tecnologia web e decidi mergulhar de cabeça nesse novo desafio.</p>
+
+                <button class="btn-ler-mais"> Ler Mais</button>
+
+                    <div class="texto-completo">
+                        <p>Minha jornada no desenvolvimento front-end tem sido inspiradora, e estou sempre em busca de novas oportunidades para aprimorar minhas habilidades e conhecimentos nesse campo em constante evolução. Tenho me dedicado a aprender as linguagens de programação essenciais, como HTML, CSS e JavaScript, e estou animado para expandir meu conhecimento para frameworks e bibliotecas modernas, como React e Node.js.</p>
+                        
+                        <p>O que me motiva é a possibilidade de criar experiências digitais incríveis e envolventes para os usuários, combinando minha formação em engenharia com minhas habilidades criativas. Tenho uma abordagem analítica e orientada a detalhes, que aprimorei ao longo dos anos trabalhando em projetos complexos como engenheiro químico.</p>
+                        
+                        <p>Estou ansioso para colaborar com equipes talentosas, enfrentar desafios empolgantes e contribuir para o desenvolvimento de soluções web de alto nível. Minha dedicação, entusiasmo e habilidades técnicas são a base para o meu sucesso contínuo nesta nova jornada como desenvolvedor front-end.</p>
+                        
+                        <p>Se você está em busca de um profissional comprometido, com uma sólida base técnica e uma paixão inabalável pelo desenvolvimento web, estou pronto para trazer minhas habilidades e experiência para sua equipe. Vamos criar algo incrível juntos!</p>
+                    </div>
+
+                    <button class="btn-diminuir" style="display: none;">Menos</button>
+
+                    <div id="fundo-sobre"><img src="imagens/fundo-sobre.png" alt="fundo-sobre"></div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dignissimos, libero enim cum, nostrum unde aliquam ex sunt ipsum atque consequatur eveniet aut, amet eius eaque ipsam nihil dolorem quia!</p>
 
                 <div class="botao-div"><button class="botao" id="botao-cv"><a href="documentos/currículo - João Victor Neves Campos de Jesus.pdf" target="_blank">Baixar CV</a></button></div>
+            </div>
+
+            
+
+
+            <section class="skills section" id="skills">
+
+                <div class="fundo-skills">
+                    <img src="imagens/fundo-skills.jpg" alt="fundo-skills">
+                </div>
+
+                <div class="skills__container bd-grid">   
+                    
+                    
+                    <div>
+                        <h2 class="skills__subtitle"> Hardskills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+
+
+                        <div class="hardskills-container">
+                            <div class="skills__data skills__html">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">75%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data skills__css" >
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">82%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data skills__js">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name">JAVASCRIPT</span>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">54%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data skills__py">
+                                <div class="skills__names">
+                                    <i class='bx bxs-paint skills__icon'></i>
+                                    <span class="skills__name">Python</span>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">68%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div>
+                <img src="imagens/fundo-projetos.jpg" alt="fundo-projetos">
             </div>
 
         <section id="projetos">
@@ -92,5 +182,41 @@
         <p>Criado por <strong><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank">João Campos</a></strong></p>
         <p>contato: <strong>joaon.c.jv@gmail.com</strong></p>
     </footer> 
+
+    <script>
+document.querySelector(".menu-toggle").addEventListener("click", function() { document.querySelector(".menu").classList.toggle("open");
+});
+                // Selecionar todos os botões de "Ler Mais"
+        const btnsLerMais = document.querySelectorAll('.btn-ler-mais');
+
+        // Iterar sobre cada botão e adicionar o evento de clique
+        btnsLerMais.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            // Trocar a exibição do texto completo e botões
+            const textoCompleto = this.parentNode.querySelector('.texto-completo');
+            const btnDiminuir = this.parentNode.querySelector('.btn-diminuir');
+            textoCompleto.style.display = 'block';
+            btnDiminuir.style.display = 'inline';
+            this.style.display = 'none';
+        });
+        });
+
+        // Selecionar todos os botões de "Diminuir"
+        const btnsDiminuir = document.querySelectorAll('.btn-diminuir');
+
+        // Iterar sobre cada botão e adicionar o evento de clique
+        btnsDiminuir.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            // Recolher o texto completo e mostrar o botão de "Ler Mais"
+            const textoCompleto = this.parentNode.querySelector('.texto-completo');
+            const btnLerMais = this.parentNode.querySelector('.btn-ler-mais');
+            textoCompleto.style.display = 'none';
+            btnLerMais.style.display = 'inline';
+            this.style.display = 'none';
+        });
+        });   
+
+    </script>
+
 </body>
 </html>

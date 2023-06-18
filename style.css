@@ -1,7 +1,32 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@400;700&display=swap');
 
+
+/*===== VARIABLES CSS =====*/
+
 :root{
+    --header-height: 3rem;
+    --font-semi: 600;
+    /*===== Colores =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Fuente y tipografia =====*/
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    /*===== Margenes =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
     --cor01:#65B4C2;
     --cor02:#08A6C2;
     --cor03:#2F808F;
@@ -10,15 +35,76 @@
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* ======= BODY =======*/
 
 body{
     font-family: Poppins, Arial, "sans-serif";
+    font-size: 12px;
     margin: 0;
     max-width: 300;
+    background-color: rgb(224, 223, 223);
+
 
 }
 
+/* ============ MENU ============= */
+
+.menu-toggle{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-toggle:before, .menu-toggle:after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: transform 0.3s;
+}
+
+.menu-toggle:before {
+    left: 15px;
+    transform: translateY(10px);
+  }
+  
+  .menu-toggle:after {
+    left: 15px;
+    transform: translateY(25px);
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.open {
+    display: block;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu a:hover{
+    font-weight: 400;
+  }
 /* ======= HEADER =======*/
 
 header{
@@ -39,8 +125,10 @@ header span{
 
 /* ======= MAIN =======*/
 main{
-    margin: 0;
     min-width: 300px;
+    background-color: white;
+    font-size: 12px;
+    
     
 }
 
@@ -54,30 +142,28 @@ main h2{
 }
 
 main p{
-    font-size: 16px;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 /* ======= HOME =======*/
 .box-home{
     margin: auto;
-    width: 50%;
-    height: 50%;
+    background-color: rgb(224, 223, 223);
 }
 
 #foto-perfil{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 70%;
+    display: flex;
+    align-self: center;
     max-width: 300px;
     min-width: 200px;
-    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 .box-home-texto{
     text-align: center;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 20px;
 }
 
 .box-home-texto h1, h2{
@@ -87,7 +173,7 @@ main p{
 }
 
 .texto-destaque{
-    color: var(--cor02);
+    color: var(--cor04);
 }
 
 .botao-div{
@@ -98,7 +184,7 @@ main p{
 
 .botao{
     padding: 10px;
-    background-color: var(--cor05);
+    background-color: var(--cor04);
     text-align: center;
     width: 80%;
     font-family: Poppins, "sans-serif";
@@ -108,9 +194,8 @@ main p{
     box-shadow: 2px 2px 10px#0000004b;
     border: none;
     margin: auto;
-
-
-    
+    margin-top: 10px;
+ 
 }
 
 a{
@@ -119,7 +204,7 @@ a{
 }
 
 a:hover{
-    color: #033942;
+    color: var(--cor05);
 }
 
 .botao a{
@@ -128,9 +213,9 @@ a:hover{
 }
 
 .botao:hover{
-    background-color: var(--cor04);
-    padding: 15px;
+    background-color: var(--cor05);
     transition: 0.5s;
+
 }
 
 .botao:active{
@@ -156,29 +241,28 @@ a:hover{
 
 .titulo{
     color: #021d22;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 #titulo-especial{
-    color: white;
+    color: var(--cor05);
 }
 
 .titulo-projeto{
     text-align: center;
     color: #021d22;
-    font-size: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 .box-conteudo{
-    width: 80%;
+    width: 85%;
     max-width: 800px;
     margin: auto;
     text-align: justify;
-    color: #021d22;
+    color: var(--cor05);
     background-color: white;
-    padding: 10px;
-    border: 10px;
-    border-radius: 10px;
     height: 10%;
-    margin-bottom: 20px;
 }
 
 .box-conteudo img{
@@ -192,34 +276,122 @@ a:hover{
 }
 
 #box-sobre{
-    background-image: linear-gradient(to bottom, var(--cor05), var(--cor01));
-    /* border: solid 10px var(--cor05); */
-    color: white;
+    background-color: white;
+    color: black;
 }
+
+.texto-completo{
+    display: none;
+}
+
+.btn-ler-mais, .btn-diminuir{
+    background-color: var(--cor05);
+    color: white;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
 .projeto img{
     width: 100%;
     margin: auto;
     margin-top: 20px;
-    border: solid 5px var(--cor05);
-    border-radius: 20px;
-    margin-left: -10px;   
 }
 
 #img-paisagem{
     max-width: 400px;
 }
 
-/* #botao-cv{
-    background-color: var(--cor02);
-    margin: 20px;
-    max-width: 400px;
-    text-align: center;
-} */
+
+/* ===== SKILLS =====*/
+
+.fundo-skills, .fundo-sobre{
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.fundo-skills > img, .fundo-sobre > img{
+    width: 100%;
+}
+
+.hardskills-container{
+    width: 70vw;
+    max-width: 800px;
+    min-width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
 
 
-
-
-
+.skills__container {
+    row-gap: 2rem;
+  }
+  
+  .skills__subtitle {
+    margin-top: 20px;
+    margin-bottom: var(--mb-2);
+    text-transform: uppercase;
+    margin-left: 30px;
+  }
+  
+  .skills__text {
+    margin-bottom: var(--mb-4);
+    margin: 30px;
+  }
+  
+  .skills__data {
+    display: flex;
+    background-color: var(--cor05);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: 0.5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  }
+   
+  .skills__icon {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: white;
+  }
+  
+  .skills__names {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .skills__percentage{
+    color: white;
+  }
+  
+  .skills__html {
+    width: 75%;
+  }
+  
+  .skills__css {
+    width: 82%;
+  }
+  
+  .skills__js {
+    width: 54%;
+  }
+  
+  .skills__py {
+    width: 68%;
+  }
+  
+  .skills__img {
+    border-radius: .5rem;
+  }
 
 
 
@@ -227,7 +399,7 @@ a:hover{
 footer{
     background-color: var(--cor05);
     color: white;
-    padding: 50px;
+    padding: 15px;
     margin: auto;
 }
 footer > p{
