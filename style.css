@@ -47,6 +47,11 @@
     margin-left: 40px;
     margin-top: 30px;
   }
+
+  .space{
+    height: 100px;
+    width: 100%;
+  }
   
 
 /* ======= BODY =======*/
@@ -124,8 +129,8 @@ header{
     text-align: right;
     padding: 10px;
     color: white;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
     z-index: 999;
 }
 
@@ -171,8 +176,9 @@ main p{
 #foto-perfil{
     display: flex;
     align-self: center;
-    max-width: 300px;
+    width: 50vw;
     min-width: 200px;
+    max-width: 350px;
     margin: auto;
 }
 
