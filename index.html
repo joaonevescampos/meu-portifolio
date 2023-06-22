@@ -17,7 +17,9 @@
            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre" id="menu-sobre">Sobre</a></li>
-                <li><a href="#skills">hardSkills</a></li>
+                <li><a href="#hardskills">HardSkills</a></li>
+                <li><a href="#softskills">SoftSkills</a></li>
+                <li><a href="#botao-cv">Currículo</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#" target="_blank" id="menu-contato">Contato</a></li>   
            </ul>
@@ -211,7 +213,7 @@
 
             <div class="box-projeto">
             
-                <div class="projeto">
+                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
                     
                     <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><img src="imagens/projeto-mandala.jpeg" alt="projeto-mandala"></a>
                 </div>
@@ -222,7 +224,7 @@
                 
             </div>
             <div class="box-projeto">
-                <div class="projeto">
+                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
                     <a href="https://github.com/joaonevescampos/projeto-jogo-da-cobrinha" target="_blank"><img src="imagens/projeto-login.PNG" alt="jogo-da-cobrinha"></a>
                 </div>
                 <div class="descricao-projeto">
@@ -235,7 +237,7 @@
 
             <div class="box-projeto">
                 <h1 class="titulo-projeto"></h1>
-                <div class="projeto">
+                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
                     <a href="https://joaonevescampos.github.io/projeto-pokedex/" target="_blank"><img src="imagens/projeto-pokedex.PNG" alt="projeto-pokedex"></a>
                 </div>
                 <div class="descricao-projeto">
@@ -246,7 +248,7 @@
                
                 <div class="box-projeto">
                     
-                    <div class="projeto">
+                    <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
                         <a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"><img src="imagens/projeto-relatorio-de-vendas.jpeg" alt="projeto-relatorio-de-vendas"></a>
                         
                     </div>
@@ -293,7 +295,14 @@ document.querySelector(".menu-toggle").addEventListener("click", function() { do
             btnLerMais.style.display = 'inline';
             this.style.display = 'none';
         });
-        });   
+        });  
+
+
+        // IMAGEM AMPLIADA NOS PROJETOS
+        function ampliarImagem(elemento) {
+        elemento.classList.toggle("imagem-ampliada");
+        }
+
 
     </script>
 
