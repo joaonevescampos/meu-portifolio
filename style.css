@@ -42,15 +42,16 @@
 
 .linha-colorida {
     border-top: 2px solid #021d22; 
-    height: 5px;
-    width: 100px;
-    margin-left: 40px;
-    margin-top: 30px;
+    height: 1px;
+    width: 20vw;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .space{
-    height: 100px;
+    height: 50px;
     width: 100%;
+    background-color: rgb(211, 209, 209);
   }
   
 
@@ -59,8 +60,9 @@
 body{
     font-family: Poppins, Arial, "sans-serif";
     font-size: 12px;
+    background-color: rgb(211, 209, 209);
     margin: 0;
-    background-color: white;
+
 }
 
 /* ============ MENU ============= */
@@ -97,7 +99,7 @@ body{
   .menu.open {
     display: block;
     width: 100px;
-    background-color: #033942d0;
+    background-color: rgba(0, 0, 0, 0.808);
   }
   
   .menu ul {
@@ -153,24 +155,31 @@ main{
 }
 
 main h1{
-    font-size: 20px;
-    margin: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 30px;
 }
 
 main h2{
-    font-size: 18px;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: left;
+    margin: auto;
 }
 
 main p{
     font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 30px;
 }
 
 /* ======= HOME =======*/
 .box-home{
     margin: auto;
-    background-color: white;
+    background-color: rgb(211, 209, 209);
+    padding: 20px;
 }
 
 #foto-perfil{
@@ -185,7 +194,7 @@ main p{
 .box-home-texto{
     text-align: center;
     margin: auto;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .box-home-texto h1, h2{
@@ -194,6 +203,13 @@ main p{
 
 .texto-destaque{
     color: var(--cor04);
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    align-items: center;
+    width: 200px;
+    margin: auto;
 }
 
 .botao-div{
@@ -204,7 +220,7 @@ main p{
 
 .botao{
     padding: 10px;
-    background-color: var(--cor04);
+    background-color: black;
     text-align: center;
     width: 200px;
     font-family: Poppins, "sans-serif";
@@ -285,7 +301,6 @@ a:hover{
     text-transform: uppercase;
 }
 .box-conteudo{
-    width: 85%;
     max-width: 800px;
     margin: auto;
     text-align: justify;
@@ -317,11 +332,11 @@ a:hover{
 }
 
 .btn-ler-mais, .btn-diminuir{
-    background-color: var(--cor05);
+    background-color: black;
     color: white;
     width: 100px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
     text-align: center;
     border-radius: 10px;
 
@@ -330,7 +345,7 @@ a:hover{
 .projeto img{
     width: 100%;
     margin: auto;
-    margin-top: 20px;
+    
 }
 
 #img-paisagem{
@@ -362,12 +377,6 @@ a:hover{
     row-gap: 2rem;
   }
   
-  .skills__subtitle {
-    margin-top: 20px;
-    margin-bottom: var(--mb-2);
-    text-transform: uppercase;
-    margin-left: 30px;
-  }
   
   .skills__text {
     margin-bottom: var(--mb-4);
@@ -376,7 +385,7 @@ a:hover{
   
   .skills__data {
     display: flex;
-    background-color: var(--cor05);
+    background-color: rgb(71, 71, 71);
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -425,6 +434,12 @@ a:hover{
 
 .texto-skills{
     margin-left: 30px;
+}
+
+/* ======= PROJETOS =======*/
+
+#projetos{
+  background-color: rgb(211, 209, 209);
 }
 
 /* ======= FOOTER =======*/
