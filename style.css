@@ -41,9 +41,9 @@
 }
 
 .linha-colorida {
-    border-top: 2px solid #021d22; 
+    border-top: 1px solid #021d22; 
     height: 1px;
-    width: 20vw;
+    width: 50vw;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -160,6 +160,7 @@ main h1{
     text-transform: uppercase;
     text-align: left;
     margin-left: 30px;
+    padding-top: 10px;
 }
 
 main h2{
@@ -237,11 +238,11 @@ main p{
 
 a{
     text-decoration: none ;
-    color: var(--cor02);
+    color: purple;
 }
 
 a:hover{
-    color: var(--cor05);
+    color: black;
 }
 
 .botao a{
@@ -342,11 +343,6 @@ a:hover{
 
 }
 
-.projeto img{
-    width: 100%;
-    margin: auto;
-    
-}
 
 #img-paisagem{
     max-width: 400px;
@@ -385,7 +381,7 @@ a:hover{
   
   .skills__data {
     display: flex;
-    background-color: #191222;
+    background-color: #524F48;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -438,13 +434,51 @@ a:hover{
 
 /* ======= PROJETOS =======*/
 
-#projetos{
+.todos-projetos{
   background-color: rgb(211, 209, 209);
 }
 
+.projeto{
+  background-color: rgb(211, 209, 209);
+}
+
+.projeto img{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.box-projeto{
+  max-width: 500px;
+  width: 80vw;
+  margin: auto;
+  margin-top: 20px;
+  text-align: justify;
+  color: var(--cor05);
+  /* background-color: white; */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+  
+}
+
+.box-projeto img{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  box-shadow: inset 2px 2px 10px #000000ec;
+  
+}
+
+.descricao-projeto p{
+  display: none;
+  padding-bottom: 20px;
+}
+
+
 /* ======= FOOTER =======*/
 footer{
-    background-color: var(--cor05);
+    background-color: black;
     color: white;
     padding: 15px;
     margin: auto;
