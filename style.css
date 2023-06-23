@@ -374,6 +374,7 @@ a:hover{
     background-image: url(imagens/recheio2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 
 
 }
@@ -395,6 +396,7 @@ a:hover{
   .softskills-nivel, .hardskills-nivel{
     width: calc(100% - 40px); 
     margin-left: 30px;
+    width: 75vw;
   }
 
 
@@ -551,7 +553,7 @@ a:hover{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Cor escura com transparência */
+  background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
   opacity: 1; /* Opacidade inicial */
   transition: opacity 0.3s ease;
 }
