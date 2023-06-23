@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <header>
@@ -76,12 +77,12 @@
             <!-- ------------ HARDSKILLS ------------ -->
             
             <div class="fundo-skills">
-                <img src="imagens/recheio2.png" alt="recheio2">
+                <!-- <img src="imagens/recheio2.png" alt="recheio2"> -->
             </div>
 
-            <section class="skills section" id="hardskills">
+            <section class="skills section" id="skills">
 
-                <div class="skills__container bd-grid">   
+                <div class="hardskills__container bd-grid" id="hardskills">   
                     
                     <div>
                         <h1 class="skills__subtitle"> Hardskills</h1>
@@ -89,10 +90,9 @@
                         <p class="skills__text">Possuo um conhecimento básico das linguagens: HTML5, CSS3, JavaScript e Python. Pretendo aperfeiçoar cada vez mais meus conhecimentos nessas tecnologias, e expandir meu conhecimento aprendendo TypeScript, React e Node.js. Estou aberto também para futuramente aprender tecnologias Backend como PHP, Django e SQL, me tornando assim um desenvolvedor Full Stack.</p>
 
 
-                        <div class="hardskills-container">
+                        <div class="hardskills-nivel">
                             <div class="skills__data skills__html">
                                 <div class="skills__names">
-                                    <i class='bx bxl-html5 skills__icon'></i>
                                     <span class="skills__name">HTML5</span>
                                 </div>
                                 <div>
@@ -101,7 +101,6 @@
                             </div>
                             <div class="skills__data skills__css" >
                                 <div class="skills__names">
-                                    <i class='bx bxl-css3 skills__icon'></i>
                                     <span class="skills__name">CSS3</span>
                                 </div>
                                 <div>
@@ -110,7 +109,6 @@
                             </div>
                             <div class="skills__data skills__js">
                                 <div class="skills__names">
-                                    <i class='bx bxl-javascript skills__icon' ></i>
                                     <span class="skills__name">JAVASCRIPT</span>
                                 </div>
                                 <div>
@@ -119,7 +117,6 @@
                             </div>
                             <div class="skills__data skills__py">
                                 <div class="skills__names">
-                                    <i class='bx bxl-python skills__icon'></i>
                                     <span class="skills__name">PYTHON</span>
                                 </div>
                                 <div>
@@ -138,7 +135,7 @@
 
                 <section class="skills section" id="softskills">
 
-                    <div class="skills__container bd-grid">   
+                    <div class="softskills__container bd-grid">   
                         
                         <div>
                             <h1 class="skills__subtitle"> Softskills</h1>
@@ -146,38 +143,38 @@
                             <p class="skills__text">Sou uma pessoa paciente que trabalha bem em equipe, criativo, racional, dedicado a cumprir todas tarefas no prazo estipulado, perfeccionista, atento a detalhes.</p>
     
     
-                            <div class="hardskills-container">
-                                <div class="skills__data skills__html">
-                                    <div class="skills__names">
+                            <div class="softskills-nivel">
+                                <div class="skills__data skills__paciente">
+                                    <div class="skills__names ">
                                         
-                                        <span class="skills__name">Paciente</span>
+                                        <span class="skills__name">PACIENTE</span>
                                     </div>
                                     <div>
                                         <span class="skills__percentage">93%</span>
                                     </div>
                                 </div>
-                                <div class="skills__data skills__css" >
-                                    <div class="skills__names">
+                                <div class="skills__data skills__perfeccionista" >
+                                    <div class="skills__names ">
                             
-                                        <span class="skills__name">Perfeccionista</span>
+                                        <span class="skills__name">PERFECCIONISTA</span>
                                     </div>
                                     <div>
                                         <span class="skills__percentage">90%</span>
                                     </div>
                                 </div>
-                                <div class="skills__data skills__js">
+                                <div class="skills__data skills__detalhista">
                                     <div class="skills__names">
                                         
-                                        <span class="skills__name">Detalhista</span>
+                                        <span class="skills__name ">DETALHISTA</span>
                                     </div>
                                     <div>
                                         <span class="skills__percentage">85%</span>
                                     </div>
                                 </div>
-                                <div class="skills__data skills__py">
+                                <div class="skills__data skills__criativo">
                                     <div class="skills__names">
                                         
-                                        <span class="skills__name">Criativo</span>
+                                        <span class="skills__name ">CRIATIVO</span>
                                     </div>
                                     <div>
                                         <span class="skills__percentage">79%</span>
@@ -196,16 +193,16 @@
             <!-- <div class="container-fundo-projetos"><img src="imagens/fundo-projetos.jpg" alt="projetos"></div> -->
             </section>
 
-            <div class="fundo-skills">
+            <!-- <div class="fundo-skills">
         
-            </div>
-
+            </div> -->
+        </section>
             <!-- ------------ PROJETOS ------------ -->
 
         <section class="todos-projetos" id="projetos">
             
-            <h1 class="titulo">Projetos</h1>
-            <div class="linha-colorida"></div>
+            <h1 id="titulo-projetos">Projetos</h1>
+            <div id="linha-colorida-projetos"></div>
 
             <div class="box-projeto">
             
@@ -221,7 +218,7 @@
             </div>
             <div class="box-projeto">
                 <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                    <a href="https://github.com/joaonevescampos/projeto-jogo-da-cobrinha" target="_blank"><img src="imagens/projeto-login.PNG" alt="jogo-da-cobrinha"></a>
+                    <a href="https://github.com/joaonevescampos/projeto-jogo-da-cobrinha" target="_blank"><img src="imagens/projeto-login.PNG" alt="projeto-login"></a>
                 </div>
                 <div class="descricao-projeto">
                     <h1 class="titulo-projeto"></h1>

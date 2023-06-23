@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+             /* VERSÃO PARA TABLET */
+
+@media screen and (min-width:778px){
+
+    .box-home-img{
+        display: inline-block;
+        width: 70%;
+        margin: auto;
+
+    }
+
+    .box-home-texto{
+        display: inline-block;
+        width: 200px;
+        transform: translate(-50px, -150px);
+        margin: auto;
+
+    }
+
+    .redes-sociais{
+       
+        margin-left: 43vw;
+        transform: translateY(-130px);
+    }
+
+    .linha-colorida{
+        display: none;
+    }
+
+    .fundo-skills{
+        height: 150px;
+          background-image: url(imagens/recheio3.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0px -45px;
+      
+      
+      }
+
+    #hardskills{
+        display: inline-block;
+        width: 40vw;
+
+    }
+    #skills{
+        padding-left: 9%;
+        padding-right: 6%;
+        margin-bottom: 100px;
+    }
+
+    #softskills{
+
+        display: inline-block;
+        margin-top: 50px;
+        width: 40vw;
+    }
+
+      .hardskills__container {
+        display: inline-block;
+        margin: 0;
+
+      }
+
+      .softskills__container {
+        display: inline-block;
+        margin: 0;
+        
+        
+      }
+
+      .softskills-nivel, .hardskills-nivel{
+        width: calc(100% - 40px); 
+      }
+
+      
+      .skills__text {
+        margin-bottom: var(--mb-4);
+        margin: 30px;
+       
+      }
+
+      .todos-projetos{
+        padding-left: 20vw;
+        padding-right: 20vw;
+      }
+      .box-projeto{
+        display: inline-block;
+        width: 28vw;
+
+      }
+
+
+      
+}
