@@ -4,6 +4,11 @@
 
 @media screen and (min-width:778px){
 
+  .menu.open {
+    width: 200px;
+    transition: 1s ease;
+  }
+
     .box-home-img{
         display: inline-block;
         width: 70%;

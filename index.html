@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - João</title>
+    <title>João Campos</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
@@ -122,6 +122,19 @@
                                 <div>
                                     <span class="skills__percentage">68%</span>
                                 </div>
+
+                                
+                            </div>
+
+                            <div class="skills__data skills__git">
+                                <div class="skills__names">
+                                    <span class="skills__name">GIT / GITHUB</span>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">72%</span>
+                                </div>
+
+                                
                             </div>
                         </div>
                         
@@ -254,7 +267,7 @@
     </main>
     <footer>
         <p>joaon.c.jv@gmail.com</p><br>
-        <p>Copyright © 2023 - João Campos - Todos os direitos reservados</p>
+        <p>Copyright © 2023 - Criado por <strong>João Campos</strong> - Todos os direitos reservados</p>
     </footer> 
 
     <script>
@@ -293,8 +306,24 @@ document.querySelector(".menu-toggle").addEventListener("click", function() { do
 
         // IMAGEM AMPLIADA NOS PROJETOS
         function ampliarImagem(elemento) {
-        elemento.classList.toggle("imagem-ampliada");
+            elemento.classList.toggle("imagem-ampliada");
+            
         }
+
+        // ANIMAÇÃO AO ROLAR A PÁGINA
+
+            const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2000,
+            delay: 200,
+        //     reset: true
+        });
+
+        sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+        sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+        sr.reveal('.home__social-icon',{ interval: 200}); 
+        sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 
     </script>

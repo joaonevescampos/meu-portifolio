@@ -161,6 +161,8 @@ main h1{
     text-align: left;
     margin-left: 30px;
     padding-top: 10px;
+
+
 }
 
 main h2{
@@ -190,6 +192,12 @@ main p{
     min-width: 200px;
     max-width: 350px;
     margin: auto;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+    
 }
 
 .box-home-texto{
@@ -451,6 +459,10 @@ a:hover{
   
   .skills__py {
     width: 68%;
+  }
+
+  .skills__git{
+    width: 72%;
   }
 
   .skills__paciente{
