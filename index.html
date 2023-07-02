@@ -24,14 +24,15 @@
                 <li><a href="#sobre" id="menu-sobre">Sobre</a></li>
                 <li><a href="#hardskills">HardSkills</a></li>
                 <li><a href="#softskills">SoftSkills</a></li>
-                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#container-cv">Currículo</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#" target="_blank" id="menu-contato">Contato</a></li>   
            </ul>
         </nav>
-          <!-- -------------------------- -->  
     </header>
+
     <!-- ------------- CAPA ------------- -->
+    
     <main>
         <div class="space"></div>
         <section id="home">
@@ -51,7 +52,7 @@
                         <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank"><i class='bx bxl-linkedin icones-redes-sociais'></i></a>
                         <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portif%C3%B3lio%20e%20me%20interessei%20pelo%20seu%20trabalho!" target="_blank"><i class='bx bxl-whatsapp icones-redes-sociais'></i></a>
 
-                            <button class="botao-abacate"><a href="#projetos">Projetos</a></button>
+                            <a href="#projetos"><button class="botao-abacate">Projetos</button></a>
                         </div>
                         
                     </div>
@@ -82,7 +83,6 @@
                     <button class="btn-diminuir" style="display: none;">Menos</button>
             </div>    
         </section>
-              
 
             <!-- ------------ HARDSKILLS ------------ -->
             
@@ -125,7 +125,9 @@
 
                 </section>
 
-            <section class="container-cv">
+                <!-- ------------ PROJETOS ------------ -->
+
+            <section id="container-cv">
 
                 <p class="texto-curriculo">Confira meu currículo completo:</p>
                 <div class="icone-cv">
@@ -151,52 +153,30 @@
                     <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><img src="imagens/mandala-proj.png" alt="projeto-mandala" class="img-projeto"></a>
                 </div>
                 
-                    <div class="hardskills-icones">
-                        <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
-                        <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
-                        <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
-                    </div>
-                
-                    <div class="descricao-projeto">
-                        <h1 class="titulo-projeto">Portifólio - Mandala</h1>
-                        <p>Trata-se de um site completo que diz a respeito da história do mascote android e suas curiosidades. Foram utilizados conhecimentos básicos de HTML e CSS para fazer esse projeto.</p>
-                    </div>
-                    <span>
-                        <button class="botao-projeto"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Projeto</button>
-                    </span>
-                    <span>
-                        <button class="botao-codigo"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Código</button>
-                    </span>
-                
-            </div>
-            <div class="box-projeto">
-                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                    <a href="https://github.com/joaonevescampos/projeto-jogo-da-cobrinha" target="_blank"><img src="imagens/login-proj.png" alt="projeto-login" class="img-projeto"></a>
-                </div>
-
                 <div class="hardskills-icones">
                     <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
                     <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
+                    <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
                 </div>
-
+            
                 <div class="descricao-projeto">
-                    <h1 class="titulo-projeto">Login de Hotel</h1>
-                    <p>Quem não conhece o joguinho da cobrinha? Esse simples jogo nostáugico foi desenvolvido em Python.</p>
+                    <h1 class="titulo-projeto">Portifólio - Mandala</h1>
+                    <p>Trabalho freelancer feito para um cliente arquiteto. Foi criado um portifólio completo para divulgação e venda de suas mandalas! Foram utilizadas as tecnologias: <strong>HTML5, CSS3 e JavaScript</strong>.</p>
                 </div>
                 <span>
-                    <button class="botao-projeto"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Projeto</button>
+                    <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><button class="botao-projeto">Projeto</button></a>
+
+                    <a href="https://github.com/joaonevescampos/site-daniel-aldano" target="_blank"> <button class="botao-codigo">Código</button></a>
                 </span>
-                <span>
-                    <button class="botao-codigo"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Código</button>
-                </span>
+                
             </div>
 
-
+            <!-- ------------------------- -->
 
             <div class="box-projeto">
                 
                 <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                    <a href="https://joaonevescampos.github.io/projeto-pokedex/" target="_blank"><img src="imagens/pokemon-proj.png" alt="projeto-pokedex" class="img-projeto"></a>
+                    <a href="https://joaonevescampos.github.io/projeto-site-pokemon/" target="_blank"><img src="imagens/pokemon-proj.png" alt="projeto-pokedex" class="img-projeto"></a>
                 </div>
 
                 <div class="hardskills-icones">
@@ -207,41 +187,40 @@
 
                 <div class="descricao-projeto">
                     <h1 class="titulo-projeto">Pokédex</h1>
-                    <p>O site pokedex é um projeto construido utilizando as linguagens HTML, CSS e JavaScript. </p>
+                    <p>O Pokedex é um projeto que lista 10 pokémons, descrevendo suas habilidades em cards iterativos. Utilizou-se as linguagens <strong>HTML5, CSS3 e JavaScript</strong>. </p>
                 </div>
                 <span>
-                    <button class="botao-projeto"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Projeto</button>
+                    <a href="https://joaonevescampos.github.io/projeto-site-pokemon/" target="_blank"><button class="botao-projeto">Projeto</button></a>
                 </span>
                 <span>
-                    <button class="botao-codigo"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Código</button>
+                    <a href="https://github.com/joaonevescampos/projeto-site-pokemon" target="_blank"><button class="botao-codigo">Código</button></a>
                 </span>
             </div>
-            
-               
-                <div class="box-projeto">
-                    
-                    <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                        <a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"><img src="imagens/mobile.png" alt="projeto-relatorio-de-vendas" class="img-projeto"></a>
-                        
-                    </div>
 
-                    <div class="hardskills-icones">
-                        <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
-                        <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
-                        <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
-                    </div>
+            <!-- ------------------------- -->
 
-                    <div class="descricao-projeto">
-                        <h1 class="titulo-projeto">Relatório de vendas</h1>
-                        <p>Este projeto organiza e analisa uma extensa base de dados do Excel com os nome de produtos, preços e quantidades de 25 lojas diferentes. É feito um código em Python que organiza os dados e envia um relatório  para o e-mail desejado, em forma de tabela, com o faturamento total, ticket médio e quantidade de produtos vendidos por cada loja. </p>
-                        <span>
-                            <button class="botao-projeto"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Projeto</button>
-                        </span>
-                        <span>
-                            <button class="botao-codigo"><a href="https://github.com/joaonevescampos/projeto-relatorio-de-vendas" target="_blank"></a>Código</button>
-                        </span>
-                    </div>
+            <div class="box-projeto">
+                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
+                    <a href="https://joaonevescampos.github.io/projeto-login/" target="_blank"><img src="imagens/login-proj.png" alt="projeto-login" class="img-projeto"></a>
                 </div>
+
+                <div class="hardskills-icones">
+                    <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
+                    <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
+                </div>
+
+                <div class="descricao-projeto">
+                    <h1 class="titulo-projeto">Login de Hotel</h1>
+                    <p>Tela de login de um Hotel no litoral, desenvolvido com as tecnologias front-end: <strong>HTML5 e CSS3</strong>.</p>
+                </div>
+                <span>
+                    <a href="https://joaonevescampos.github.io/projeto-login/" target="_blank"><button class="botao-projeto">Projeto</button></a>
+                </span>
+                <span>
+                    <a href="https://github.com/joaonevescampos/projeto-login" target="_blank"><button class="botao-codigo">Código</button></a>
+                </span>
+            </div>
+
         </section>
     </main>
     <footer>

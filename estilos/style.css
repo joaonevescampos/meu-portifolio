@@ -194,7 +194,7 @@ main p{
 #foto-perfil{
     display: flex;
     align-self: center;
-    width: 250px;
+    width: 255px;
     margin: auto;
     transition-property: all;
     transition-duration: 0.5s;
@@ -253,6 +253,7 @@ main p{
 }
 
 /* ------- BOTÕES -------- */
+
 #botao-capa{
   margin: auto;
   align-items: center;
@@ -270,6 +271,7 @@ main p{
   text-transform: uppercase;
   font-size: 8pt;
   font-weight: 400;
+  cursor: pointer;
   
 
 }
@@ -287,6 +289,7 @@ main p{
   text-transform: uppercase;
   font-weight: 400;
   font-size: 8pt;
+  cursor: pointer;
 }
 
 
@@ -352,7 +355,7 @@ a{
 .texto-curriculo{
   color: white;
 }
-.container-cv{
+#container-cv{
   background-color: #222222;
 }
 .texto-curriculo{
