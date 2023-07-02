@@ -185,8 +185,8 @@ main p{
 
 .box-home-img{
   background-color: #85D061;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: auto;
   border-radius: 50%;
 }
@@ -194,7 +194,7 @@ main p{
 #foto-perfil{
     display: flex;
     align-self: center;
-    width: 300px;
+    width: 250px;
     margin: auto;
     transition-property: all;
     transition-duration: 0.5s;
@@ -214,7 +214,7 @@ main p{
 }
 
 .dev-frontend{
-    font-size: 30pt;
+    font-size: 28pt;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -261,7 +261,7 @@ main p{
 .botao-abacate, .botao-cv, .botao-projeto{
   background-color: #85D061;
   color: black;
-  width: 150px;
+  width: 120px;
   height: 40px;
   border: none;
   margin: 10px;
@@ -277,7 +277,7 @@ main p{
 .btn-ler-mais, .btn-diminuir, .botao-codigo{
   background-color: white;
   color: black;
-  width: 150px;
+  width: 120px;
   height: 40px;
   border: none;
   margin-left: 30px;
@@ -338,6 +338,7 @@ a{
 
 .hardskills-icone{
   height: 30px;
+  width: 30px;
   margin-left: 15px ;
  
 }
@@ -379,17 +380,17 @@ a{
 }
 
 /* ======= PROJETOS =======*/
-
+.titulo-projeto{
+  text-align: center;
+}
 
 .projeto img{
-    width: 100%;
-    height: 100%;
     margin: auto;
     
 }
 
 .box-projeto{
-  width: 90vw;
+  width: 92vw;
   margin: auto;
   margin-top: 20px;
   text-align: center;
@@ -400,14 +401,15 @@ a{
   
 }
 
-.box-projeto img{
+.img-projeto{
   display: flex;
   align-self: center;
   width: 95%;
   margin: auto;
   text-align: center;
   align-items: center;
-  margin-top: 20px;
+  padding: 20px 0 20px 0;
+  
  
   
 }
