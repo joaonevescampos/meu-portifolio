@@ -38,11 +38,12 @@
 }
 
 .linha-colorida {
-    border-top: 1px solid #021d22; 
-    height: 1px;
-    width: 50vw;
+    background-color: var(--cor-preto);
+    height: 3px;
+    width: 150px;
     margin-left: 30px;
     margin-right: 30px;
+    border-radius: 2px;
   }
 
   .space{
@@ -145,15 +146,15 @@ header span{
 /* ======= MAIN =======*/
 main{
    
-    background-color: white;
+    background-color: #F1F1F1;
     font-size: 12px;
     margin: auto;
     text-align: justify;
 }
 
 main h1{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: left;
     margin-left: 30px;
@@ -257,14 +258,14 @@ main p{
   align-items: center;
   width: 300px;
 }
-.botao-abacate, .botao{
+.botao-abacate, .botao-cv{
   background-color: #85D061;
   color: black;
   width: 150px;
   height: 40px;
   border: none;
   margin: 10px;
-  box-shadow: solid 3px 3px rgba(0, 0, 0, 0.411);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 8pt;
@@ -273,23 +274,17 @@ main p{
 
 }
 
-.botao-abacate a, .botao a{
+.botao-abacate a, .botao-cv a{
   text-decoration: none;
   color: black;
   
 }
 
-.botao-abacate:hover, .botao:hover{
+.botao-abacate:hover, .botao-cv:hover{
   background-color: white;
   scale: 1.1;
   transition: 1s;
   border: solid .1px black;
-}
-
-.botao-div{
-    text-align: center;
-    max-width: 150px;
-    margin: auto;
 }
 
 a{
@@ -297,37 +292,14 @@ a{
 }
 
 
-.botao:active{
-    background-color: white;
-}
-
-
-
 /* ======= SOBRE =======*/
 
-.titulo{
-    color: #021d22;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-#titulo-especial{
-    color: var(--cor05);
-
-}
-
-.titulo-projeto{
-    text-align: center;
-    color: #021d22;
-    font-size: 18px;
-    text-transform: uppercase;
-}
 .box-conteudo{
     max-width: 700px;
     margin: auto;
+    margin-bottom: 20px;
     text-align: justify;
     color: var(--cor05);
-    background-color: white;
     height: 10%;
 }
 
@@ -341,14 +313,6 @@ a{
     
 }
 
-#box-sobre{
-    background-color: white;
-    color: black;
-    
-}
-
-
-
 .texto-completo{
     display: none;
 }
@@ -360,144 +324,37 @@ a{
   height: 40px;
   border: none;
   margin-left: 30px;
-  box-shadow: solid 3px 3px rgba(0, 0, 0, 0.411);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
   border-radius: 2px;
-  border: solid 1px black;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 8pt;
 }
 
 
-#img-paisagem{
-    max-width: 400px;
-}
-
 
 /* ===== SKILLS =====*/
 
-.fundo-skills{
-  height: 250px;
-    background-image: url(imagens/recheio2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 
+/* ======= CURRÍCULO =======*/
 
+.texto-curriculo{
+  color: white;
 }
-
-.fundo-skills > img, .fundo-sobre > img, .container-fundo-projetos > img{
-    width: 100%;
+.container-cv{
+  background-color: #222222;
 }
-
-
-
-.hardskills-container,.softskills-container {
-    width: calc(100% - 40px); /* Subtrai 40px para acomodar as margens laterais */
-    
-    min-width: 300px;
-    margin: 30px auto; /* Centraliza horizontalmente */
-  }
-
-
-  .softskills-nivel, .hardskills-nivel{
-    width: calc(100% - 40px); 
-    margin-left: 30px;
-    width: 75vw;
-  }
-
-
-
-
-.skills__container {
-    row-gap: 2rem;
-  }
-  
-  
-  .skills__text {
-    margin-bottom: var(--mb-4);
-    margin: 30px;
-    
-  }
-  
-  .skills__data {
-    display: flex;
-    background-color: #021d22;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-weight: var(--font-semi);
-    padding: 0.4rem 1rem;
-    margin-bottom: 10px;
-    border-radius: .5rem;
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  }
-   
-  
-  .skills__names {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
-  
-  .skills__percentage{
-    color: white;
-  }
-  
-  .skills__html {
-    width: 75%;
-  }
-  
-  .skills__css {
-    width: 82%;
-  }
-  
-  .skills__js {
-    width: 54%;
-  }
-  
-  .skills__py {
-    width: 68%;
-  }
-
-  .skills__git{
-    width: 72%
-    ;
-  }
-
-  .skills__paciente{
-    width: 93%;
-  }
-  
-  .skills__perfeccionista {
-    width: 90%;
-  }
-  
-  .skills__detalhista {
-    width: 85%;
-  }
-  
-  .skills__criativo {
-    width: 79%;
-  }
-  
-  .skills__img {
-    border-radius: .5rem;
-  }
-
-.texto-skills{
-    margin-left: 30px;
+.texto-curriculo{
+  padding-top: 20px;
+  text-align: center;
+}
+.container-botao-cv{
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 /* ======= PROJETOS =======*/
 
-.todos-projetos{
-  background-color: black;
-}
-
-.projeto{
-  background-color: black;
-}
 
 .projeto img{
     width: 100%;
@@ -513,6 +370,7 @@ a{
   margin-top: 20px;
   text-align: justify;
   color: var(--cor05);
+  background-color: white;
   
   
 }
@@ -520,37 +378,21 @@ a{
 .box-projeto img{
   display: flex;
   align-self: center;
-  width: 90%;
+  width: 95%;
   max-width: 800px;
   margin: auto;
   text-align: center;
   align-items: center;
   box-shadow: inset 2px 2px 10px #000000ec;
   border: solid 1px white;
+  margin-top: 20px;
+ 
   
 }
 
-#titulo-projetos{
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 30px;
-  padding-top: 10px;
-}
-
 .descricao-projeto p{
-  display: none;
+  display: block;
   padding-bottom: 20px;
-}
-
-#linha-colorida-projetos{
-  border-top: 1px solid white; 
-  height: 1px;
-  width: 50vw;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .imagem-escura {
@@ -558,17 +400,17 @@ a{
   display: inline-block;
 }
 
-.imagem-escura::before {
+/* .imagem-escura::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
-  opacity: 1; /* Opacidade inicial */
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1; 
   transition: opacity 0.3s ease;
-}
+} */
 
 .imagem-escura:hover::before {
   opacity: 0; /* Opacidade ao passar o mouse */
@@ -592,7 +434,7 @@ a{
 /* ======= FOOTER =======*/
 footer{
   
-    background-color: black;
+    background-color: var(--cor-preto);
     color: white;
     padding: 15px;
     margin: auto;
