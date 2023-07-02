@@ -382,6 +382,7 @@ a{
 /* ======= PROJETOS =======*/
 .titulo-projeto{
   text-align: center;
+  margin: auto;
 }
 
 .projeto img{
