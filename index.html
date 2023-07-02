@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Campos</title>
+    <title>João Campos - Portifólio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <header>
+
+        <!-- ------------- MENU ------------- -->
+
         <div class="menu-toggle"></div>
         <nav class="menu">
            <ul>
@@ -25,9 +28,9 @@
                 <li><a href="#" target="_blank" id="menu-contato">Contato</a></li>   
            </ul>
         </nav>
-          
-          
+          <!-- -------------------------- -->  
     </header>
+    <!-- ------------- CAPA ------------- -->
     <main>
         <div class="space"></div>
         <section id="home">
@@ -37,17 +40,23 @@
                     <img src="imagens/perfil-portifolio-editado2.png" alt="perfil" id="foto-perfil">
                 </div>
                     <div class="box-home-texto">
-                        <h1 class="texto-destaque"><span>João Campos</span></h1>
-                        <h2>Desenvolvedor Frontend</h2>
+                        <h1 class="dev-frontend">Frontend Developer</h1>
+                        <h2 class="meu-nome">João Campos</h2>
+                        
                     </div>
                     <div class="redes-sociais">
                         <a href="https://github.com/joaonevescampos" target="_blank"><i class='bx bxl-github icones-redes-sociais'></i></a>
                         <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank"><i class='bx bxl-linkedin icones-redes-sociais'></i></a>
                         <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portif%C3%B3lio%20e%20me%20interessei%20pelo%20seu%20trabalho!" target="_blank"><i class='bx bxl-whatsapp icones-redes-sociais'></i></a>
+
+                            <button class="botao-abacate"><a href="#projetos">Projetos</a></button>
+                        </div>
                         
                     </div>
             </div>
         </section>
+
+        <!-- ------------- SOBRE ------------- -->
         
         <section id="sobre">
         
@@ -269,64 +278,7 @@
         <p>joaon.c.jv@gmail.com</p><br>
         <p>Copyright © 2023 - Criado por <strong>João Campos</strong> - Todos os direitos reservados</p>
     </footer> 
-
-    <script>
-document.querySelector(".menu-toggle").addEventListener("click", function() { document.querySelector(".menu").classList.toggle("open");
-});
-                // Selecionar todos os botões de "Ler Mais"
-        const btnsLerMais = document.querySelectorAll('.btn-ler-mais');
-
-        // Iterar sobre cada botão e adicionar o evento de clique
-        btnsLerMais.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            // Trocar a exibição do texto completo e botões
-            const textoCompleto = this.parentNode.querySelector('.texto-completo');
-            const btnDiminuir = this.parentNode.querySelector('.btn-diminuir');
-            textoCompleto.style.display = 'block';
-            btnDiminuir.style.display = 'inline';
-            this.style.display = 'none';
-        });
-        });
-
-        // Selecionar todos os botões de "Diminuir"
-        const btnsDiminuir = document.querySelectorAll('.btn-diminuir');
-
-        // Iterar sobre cada botão e adicionar o evento de clique
-        btnsDiminuir.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            // Recolher o texto completo e mostrar o botão de "Ler Mais"
-            const textoCompleto = this.parentNode.querySelector('.texto-completo');
-            const btnLerMais = this.parentNode.querySelector('.btn-ler-mais');
-            textoCompleto.style.display = 'none';
-            btnLerMais.style.display = 'inline';
-            this.style.display = 'none';
-        });
-        });  
-
-
-        // IMAGEM AMPLIADA NOS PROJETOS
-        function ampliarImagem(elemento) {
-            elemento.classList.toggle("imagem-ampliada");
-            
-        }
-
-        // ANIMAÇÃO AO ROLAR A PÁGINA
-
-            const sr = ScrollReveal({
-            origin: 'top',
-            distance: '60px',
-            duration: 2000,
-            delay: 200,
-        //     reset: true
-        });
-
-        sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-        sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-        sr.reveal('.home__social-icon',{ interval: 200}); 
-        sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
-
-
-    </script>
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -27,12 +27,9 @@
     /*===== z index =====*/
     --z-back: -10;
     --z-fixed: 100;
-    --cor01:#65B4C2;
-    --cor02:#08A6C2;
-    --cor03:#2F808F;
-    --cor04:#056475;
-    --cor05:#033942;
-
+    --cor-preto:#222222;
+    --cor-abacate:#85D061;
+   
 }
 
 *{
@@ -51,7 +48,7 @@
   .space{
     height: 50px;
     width: 100%;
-    background-color: rgb(211, 209, 209);
+    background-color: var(--cor-preto);
   }
   
 
@@ -60,7 +57,7 @@
 body{
     font-family: Poppins, Arial, "sans-serif";
     font-size: 12px;
-    background-color: rgb(211, 209, 209);
+    background-color: var(--cor-preto);
     margin: 0;
 
 }
@@ -76,7 +73,7 @@ body{
 .menu-toggle:before, .menu-toggle:after{
     content: "";
     position: absolute;
-    background-color: var(--cor05);
+    background-color: rgb(204, 204, 204);
     width: 30px;
     height: 3px;
     transition: transform 0.3s;
@@ -181,16 +178,22 @@ main p{
 /* ======= HOME =======*/
 .box-home{
     margin: auto;
-    background-color: rgb(211, 209, 209);
+    background-color: #222222;
     padding: 20px;
+}
+
+.box-home-img{
+  background-color: #85D061;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 50%;
 }
 
 #foto-perfil{
     display: flex;
     align-self: center;
-    width: 50vw;
-    min-width: 200px;
-    max-width: 350px;
+    width: 300px;
     margin: auto;
     transition-property: all;
     transition-duration: 0.5s;
@@ -203,105 +206,100 @@ main p{
 .box-home-texto{
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
 }
 
 .box-home-texto h1, h2{
-    color: #021d22;
+    color: white;
 }
 
-.texto-destaque{
-    color: var(--cor04);
-    font-size: 18px;
+.dev-frontend{
+    font-size: 30pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+}
+
+.meu-nome{
+    font-size: 14pt;
     font-weight: 400;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     align-items: center;
     width: 200px;
     margin: auto;
 }
 
-.icones-redes-sociais{
-  font-size: 28px;
-  color: black;
-  margin-right: 20px;
+.redes-sociais{
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
 
+.icones-redes-sociais{
+  font-size: 30px;
+  color: rgb(187, 187, 187);
+  padding: 10px;
 }
 
 .icones-redes-sociais:hover{
-  transform: scale(2);
-  border: solid 1px black;
-  box-shadow: 5px 5px 10px #00000065;
-  transform: translate(-3px, -3px);
-  transition: transform 0.3s, border 0.5s;
+  transform: scale(1.2);
+  color: #85D061;
+  transition: transform 0.5s;
+}
+
+/* ------- BOTÕES -------- */
+#botao-capa{
+  margin: auto;
+  align-items: center;
+  width: 300px;
+}
+.botao-abacate, .botao{
+  background-color: #85D061;
+  color: black;
+  width: 150px;
+  height: 40px;
+  border: none;
+  margin: 10px;
+  box-shadow: solid 3px 3px rgba(0, 0, 0, 0.411);
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 400;
+  
+
+}
+
+.botao-abacate a, .botao a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.botao-abacate:hover, .botao:hover{
+  background-color: white;
+  scale: 1.1;
+  transition: 1s;
+  border: solid .1px black;
 }
 
 .botao-div{
     text-align: center;
-    max-width: 500px;
+    max-width: 150px;
     margin: auto;
-}
-
-.botao{
-    background-color: #ebdfa4;
-    color: black;
-    text-align: center;
-    width: 150px;
-    font-family: Poppins, "sans-serif";
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px#0000004b;
-    border: solid 2px black;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
- 
 }
 
 a{
-    text-decoration: none ;
-   
-    
-}
-
-a:hover{
-    color: white;
-}
-
-.botao a{
-    text-decoration: none;
-    color: black;
-    
-}
-
-.botao:hover{
-    background-color: #e7d57b;
-    color: white;
-    transition: 0.5s;
-
+    text-decoration: none ;   
 }
 
 
 .botao:active{
     background-color: white;
 }
-
-.redes-sociais{
-    margin: auto;
-    text-align: center;
-    box-sizing: border-box;
-}
-/* .redes-sociais img{
-    width: 35px;
-    margin:auto;
-    box-sizing: border-box;
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-top: 10px;
-    
-} */
 
 
 
@@ -356,17 +354,18 @@ a:hover{
 }
 
 .btn-ler-mais, .btn-diminuir{
-    background-color: white;
-    color: black;
-    width: 100px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    border-radius: 10px;
-    text-transform: uppercase;
-    padding: 4px;
-    font-size: 12px;
-
+  background-color: white;
+  color: black;
+  width: 150px;
+  height: 40px;
+  border: none;
+  margin-left: 30px;
+  box-shadow: solid 3px 3px rgba(0, 0, 0, 0.411);
+  border-radius: 2px;
+  border: solid 1px black;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 8pt;
 }
 
 
@@ -462,7 +461,8 @@ a:hover{
   }
 
   .skills__git{
-    width: 72%;
+    width: 72%
+    ;
   }
 
   .skills__paciente{
