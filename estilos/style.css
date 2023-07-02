@@ -149,7 +149,7 @@ main{
     background-color: #F1F1F1;
     font-size: 12px;
     margin: auto;
-    text-align: justify;
+    text-align: left;
 }
 
 main h1{
@@ -274,11 +274,20 @@ main p{
 
 }
 
-.botao-abacate a, .botao-cv a{
-  text-decoration: none;
+.btn-ler-mais, .btn-diminuir, .botao-codigo{
+  background-color: white;
   color: black;
-  
+  width: 150px;
+  height: 40px;
+  border: none;
+  margin-left: 30px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 8pt;
 }
+
 
 .botao-abacate:hover, .botao-cv:hover{
   background-color: white;
@@ -289,6 +298,7 @@ main p{
 
 a{
     text-decoration: none ;   
+    color: black;
 }
 
 
@@ -298,7 +308,6 @@ a{
     max-width: 700px;
     margin: auto;
     margin-bottom: 20px;
-    text-align: justify;
     color: var(--cor05);
     height: 10%;
 }
@@ -317,25 +326,25 @@ a{
     display: none;
 }
 
-.btn-ler-mais, .btn-diminuir{
-  background-color: white;
-  color: black;
-  width: 150px;
-  height: 40px;
-  border: none;
-  margin-left: 30px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 8pt;
-}
 
 
 
 /* ===== SKILLS =====*/
+.hardskills-icones{
 
+  text-align: center;
+}
 
+.hardskills-icone{
+  height: 30px;
+  margin-left: 15px ;
+ 
+}
+
+.hardskills-triplice{
+  height: 40px;
+
+}
 /* ======= CURRÍCULO =======*/
 
 .texto-curriculo{
@@ -353,6 +362,21 @@ a{
   padding-bottom: 20px;
 }
 
+.icone-cv{
+  text-align: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  opacity: .2;
+  
+
+}
+.icone-cv img{
+  height: 100px;
+}
+
 /* ======= PROJETOS =======*/
 
 
@@ -368,8 +392,7 @@ a{
   width: 80vw;
   margin: auto;
   margin-top: 20px;
-  text-align: justify;
-  color: var(--cor05);
+  text-align: center;
   background-color: white;
   
   
