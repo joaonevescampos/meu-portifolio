@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
 <body>
     <header>
@@ -41,30 +41,27 @@
                 <div class="box-home-img">
                     <img src="imagens/perfil-portifolio-editado2.png" alt="perfil" id="foto-perfil">
                 </div>
-                    <div class="box-home-texto">
-                        <h1 class="dev-frontend">Frontend Developer</h1>
-                        <h2 class="meu-nome">João Campos</h2>
+                    <div class="box-titulos-capa">
+                        <div class="box-home-texto">
+                            <h1 class="dev-frontend">Frontend Developer</h1>
+                            <h2 class="meu-nome">João Campos</h2>
                         
-                    </div>
-                    <div class="redes-sociais">
-                        <a href="https://github.com/joaonevescampos" target="_blank">
-                        <i class='bx bxl-github icones-redes-sociais'></i></a>
-                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank"><i class='bx bxl-linkedin icones-redes-sociais'></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portif%C3%B3lio%20e%20me%20interessei%20pelo%20seu%20trabalho!" target="_blank"><i class='bx bxl-whatsapp icones-redes-sociais'></i></a>
-
-                            <a href="#projetos"><button class="botao-abacate">Projetos</button></a>
                         </div>
-                        
+                        <div class="redes-sociais">
+                            <a href="https://github.com/joaonevescampos" target="_blank">
+                            <i class='bx bxl-github icones-redes-sociais'></i></a>
+                            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-neves-campos-de-jesus-415946180/" target="_blank"><i class='bx bxl-linkedin icones-redes-sociais'></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portif%C3%B3lio%20e%20me%20interessei%20pelo%20seu%20trabalho!" target="_blank"><i class='bx bxl-whatsapp icones-redes-sociais'></i></a>
+                                <a href="#projetos"><button class="botao-abacate">Projetos</button></a>
+                        </div>
                     </div>
             </div>
         </section>
 
         <!-- ------------- SOBRE ------------- -->
         
-        <section id="sobre">
+        <section class="box-conteudo" id="box-sobre">
         
-            <div class="box-conteudo" id="box-sobre">
-
                 <h1>Sobre</h1>
                 <div class="linha-colorida"></div>
                 <p class="texto">Olá, sou João Campos, um jovem engenheiro químico em transição para a profissão de <strong>desenvolvedor front-end</strong>. Com uma sólida formação em engenharia química, descobri um verdadeiro talento na área de tecnologia web. Atualmente, estudo e faço desenvolvimento de sites como <strong>freelancer</strong>.</p>
@@ -80,50 +77,42 @@
                         
                     </div>
 
-                    <button class="btn-diminuir" style="display: none;">Menos</button>
-            </div>    
+                    <button class="btn-diminuir" style="display: none;">Menos</button>    
         </section>
 
             <!-- ------------ HARDSKILLS ------------ -->
             
-            <section class="skills section" id="hardskills">
-
-                <div class="hardskills__container bd-grid" id="hardskills">   
-                    
-                    <div>
-                        <h1 class="skills__subtitle"> Hardskills</h1>
-                        <div class="linha-colorida"></div>
-                        <p class="skills__text">Possuo um amplo conhecimento nas linguagens <strong>HTML5, CSS3, JavaScript e Python</strong> além de dominar o <strong>Git e GitHub</strong>. Pretendo aperfeiçoar cada vez mais meus conhecimentos nessas tecnologias, e expandir meu conhecimento aprendendo TypeScript, React e Angular. Estou aberto também para futuramente aprender tecnologias Backend como PHP, Django e SQL, me tornando assim um desenvolvedor Full Stack.</p>
-                        
-                    </div>
-                </div>
-                <div class="hardskills-icones">
-                    <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
-                    <img src="imagens/python-icon.png" alt="python icone" class="hardskills-icone">
-                    <img src="imagens/Git-Icon.png" alt="icon git" class="hardskills-icone">
-                    <img src="imagens/github-icon-100.png" alt="github icon" class="hardskills-icone">
-
-                </div>
-            </section>
-
-                
-            <!-- ------------ SOFTSKILLS ------------ -->
-
-                <section class="skills section" id="softskills">
-
-                    <div class="softskills__container bd-grid">   
-                        
+            <div class="all-skills">
+                <section id="hardskills">
                         <div>
-                            <h1 class="skills__subtitle"> Softskills</h1>
+                            <h1 class="skills__subtitle"> Hardskills</h1>
                             <div class="linha-colorida"></div>
-                            <p class="skills__text">Sou uma pessoa paciente que trabalha bem em equipe, criativo, racional, dedicado a cumprir todas tarefas no prazo estipulado, perfeccionista, atento a detalhes.</p>
-                            
-                        </div>  
+                            <p class="skills__text">Possuo um amplo conhecimento nas linguagens <strong>HTML5, CSS3, JavaScript e Python</strong> além de dominar o <strong>Git e GitHub</strong>. Pretendo aperfeiçoar cada vez mais meus conhecimentos nessas tecnologias, e expandir meu conhecimento aprendendo TypeScript, React e Angular. Estou aberto também para futuramente aprender tecnologias Backend como PHP, Django e SQL, me tornando assim um desenvolvedor Full Stack.</p>
+                        </div>
+                    
+                    <div class="hardskills-icones">
+                        <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
+                        <img src="imagens/python-icon.png" alt="python icone" class="hardskills-icone">
+                        <img src="imagens/Git-Icon.png" alt="icon git" class="hardskills-icone">
+                        <img src="imagens/github-icon-100.png" alt="github icon" class="hardskills-icone">
                     </div>
-
                 </section>
+                
+                <!-- ------------ SOFTSKILLS ------------ -->
+                    <section class="skills section" id="softskills">
+                        <div class="softskills__container bd-grid">
+                
+                            <div>
+                                <h1 class="skills__subtitle"> Softskills</h1>
+                                <div class="linha-colorida"></div>
+                                <p class="skills__text">Sou uma pessoa paciente que trabalha bem em equipe, criativo, racional, dedicado a cumprir todas tarefas no prazo estipulado, perfeccionista, atento a detalhes.</p>
+                
+                            </div>
+                        </div>
+                    </section>
+            </div>
 
                 <!-- ------------ PROJETOS ------------ -->
 
@@ -146,79 +135,76 @@
             <h1 id="titulo-projetos">Projetos</h1>
             <div class="linha-colorida"></div>
 
-            <div class="box-projeto">
-            
-                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                    
-                    <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><img src="imagens/mandala-proj.png" alt="projeto-mandala" class="img-projeto"></a>
-                </div>
+            <div class="linha1-projeto">
+                <div class="box-projeto">
                 
-                <div class="hardskills-icones">
-                    <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
-                </div>
-            
-                <div class="descricao-projeto">
-                    <h1 class="titulo-projeto">Portifólio - Mandala</h1>
-                    <p>Trabalho freelancer feito para um cliente arquiteto. Foi criado um portifólio completo para divulgação e venda de suas mandalas! Foram utilizadas as tecnologias: <strong>HTML5, CSS3 e JavaScript</strong>.</p>
-                </div>
-                <span>
-                    <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><button class="botao-projeto">Projeto</button></a>
-
-                    <a href="https://github.com/joaonevescampos/site-daniel-aldano" target="_blank"> <button class="botao-codigo">Código</button></a>
-                </span>
+                    <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
                 
+                        <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><img src="imagens/mandala-proj.png" alt="projeto-mandala" class="img-projeto"></a>
+                    </div>
+                
+                    <div class="hardskills-icones">
+                        <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
+                    </div>
+                
+                    <div class="descricao-projeto">
+                        <h1 class="titulo-projeto">Portifólio - Mandala</h1>
+                        <p>Trabalho freelancer feito para um cliente arquiteto. Foi criado um portifólio completo para divulgação e venda de suas mandalas! Foram utilizadas as tecnologias: <strong>HTML5, CSS3 e JavaScript</strong>.</p>
+                    </div>
+                    <span>
+                        <a href="https://joaonevescampos.github.io/site-daniel-aldano/" target="_blank"><button class="botao-projeto">Projeto</button></a>
+                        <a href="https://github.com/joaonevescampos/site-daniel-aldano" target="_blank"> <button class="botao-codigo">Código</button></a>
+                    </span>
+                
+                </div>
+                <!-- ------------------------- -->
+                <div class="box-projeto" id="box-projeto-pokemon">
+                
+                    <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
+                        <a href="https://joaonevescampos.github.io/projeto-site-pokemon/" target="_blank"><img src="imagens/pokemon-proj.png" alt="projeto-pokedex" class="img-projeto"></a>
+                    </div>
+                    <div class="hardskills-icones">
+                        <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
+                    </div>
+                    <div class="descricao-projeto">
+                        <h1 class="titulo-projeto">Pokédex</h1>
+                        <p>O Pokedex é um projeto que lista 10 pokémons, descrevendo suas habilidades em cards iterativos. Utilizou-se as linguagens <strong>HTML5, CSS3 e JavaScript</strong>. </p>
+                    </div>
+                    <span>
+                        <a href="https://joaonevescampos.github.io/projeto-site-pokemon/" target="_blank"><button class="botao-projeto">Projeto</button></a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/joaonevescampos/projeto-site-pokemon" target="_blank"><button class="botao-codigo">Código</button></a>
+                    </span>
+                </div>
             </div>
 
             <!-- ------------------------- -->
 
-            <div class="box-projeto">
-                
-                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                    <a href="https://joaonevescampos.github.io/projeto-site-pokemon/" target="_blank"><img src="imagens/pokemon-proj.png" alt="projeto-pokedex" class="img-projeto"></a>
+            <div class="linha2-projeto">
+                <div class="box-projeto">
+                    <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
+                        <a href="https://joaonevescampos.github.io/projeto-login/" target="_blank"><img src="imagens/login-proj.png" alt="projeto-login" class="img-projeto"></a>
+                    </div>
+                    <div class="hardskills-icones">
+                        <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
+                        <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
+                    </div>
+                    <div class="descricao-projeto">
+                        <h1 class="titulo-projeto">Login de Hotel</h1>
+                        <p>Tela de login de um Hotel no litoral, desenvolvido com as tecnologias front-end: <strong>HTML5 e CSS3</strong>.</p>
+                    </div>
+                    <span>
+                        <a href="https://joaonevescampos.github.io/projeto-login/" target="_blank"><button class="botao-projeto">Projeto</button></a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/joaonevescampos/projeto-login" target="_blank"><button class="botao-codigo">Código</button></a>
+                    </span>
                 </div>
-
-                <div class="hardskills-icones">
-                    <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/js-icon.png" alt="js icone" class="hardskills-icone">
-                </div>
-
-                <div class="descricao-projeto">
-                    <h1 class="titulo-projeto">Pokédex</h1>
-                    <p>O Pokedex é um projeto que lista 10 pokémons, descrevendo suas habilidades em cards iterativos. Utilizou-se as linguagens <strong>HTML5, CSS3 e JavaScript</strong>. </p>
-                </div>
-                <span>
-                    <a href="https://joaonevescampos.github.io/projeto-site-pokemon/" target="_blank"><button class="botao-projeto">Projeto</button></a>
-                </span>
-                <span>
-                    <a href="https://github.com/joaonevescampos/projeto-site-pokemon" target="_blank"><button class="botao-codigo">Código</button></a>
-                </span>
-            </div>
-
-            <!-- ------------------------- -->
-
-            <div class="box-projeto">
-                <div class="imagem-escura projeto" onclick="ampliarImagem(this)">
-                    <a href="https://joaonevescampos.github.io/projeto-login/" target="_blank"><img src="imagens/login-proj.png" alt="projeto-login" class="img-projeto"></a>
-                </div>
-
-                <div class="hardskills-icones">
-                    <img src="imagens/html-icon.png" alt="html icon" class="hardskills-icone">
-                    <img src="imagens/css-icon.png" alt="html icon" class="hardskills-icone">
-                </div>
-
-                <div class="descricao-projeto">
-                    <h1 class="titulo-projeto">Login de Hotel</h1>
-                    <p>Tela de login de um Hotel no litoral, desenvolvido com as tecnologias front-end: <strong>HTML5 e CSS3</strong>.</p>
-                </div>
-                <span>
-                    <a href="https://joaonevescampos.github.io/projeto-login/" target="_blank"><button class="botao-projeto">Projeto</button></a>
-                </span>
-                <span>
-                    <a href="https://github.com/joaonevescampos/projeto-login" target="_blank"><button class="botao-codigo">Código</button></a>
-                </span>
             </div>
 
         </section>

@@ -334,6 +334,28 @@ a{
 
 
 /* ===== SKILLS =====*/
+#hardskills{
+  width: 92vw;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  
+}
+
+#softskills{
+  width: 92vw;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  
+}
+
 .hardskills-icones{
 
   text-align: center;
@@ -342,14 +364,10 @@ a{
 .hardskills-icone{
   height: 30px;
   width: 30px;
-  margin-left: 15px ;
+  margin-right: 15px ;
  
 }
 
-.hardskills-triplice{
-  height: 40px;
-
-}
 /* ======= CURRÍCULO =======*/
 
 .texto-curriculo{
