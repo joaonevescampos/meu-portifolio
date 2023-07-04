@@ -45,12 +45,6 @@
     margin-right: 30px;
     border-radius: 2px;
   }
-
-  .space{
-    height: 50px;
-    width: 100%;
-    background-color: var(--cor-preto);
-  }
   
 
 /* ======= BODY =======*/
@@ -146,7 +140,7 @@ header span{
 /* ======= MAIN =======*/
 main{
    
-    background-color: #F1F1F1;
+    background-color: #fafafa;
     font-size: 12px;
     margin: auto;
     text-align: left;
@@ -382,7 +376,7 @@ a{
   margin: auto;
   margin-top: 20px;
   background-color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
   margin-bottom: 20px;
   padding-bottom: 10px;
   
@@ -449,7 +443,7 @@ a{
   margin-top: 20px;
   text-align: center;
   background-color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
   margin-bottom: 20px;
   padding-bottom: 10px;
   
@@ -514,6 +508,7 @@ footer{
     background-color: var(--cor-preto);
     color: white;
     padding: 15px;
+    margin-bottom: 20px;
  
 }
 
