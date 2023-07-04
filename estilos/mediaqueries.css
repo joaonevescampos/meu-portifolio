@@ -4,20 +4,21 @@
 
 @media screen and (min-width:778px) and (max-width:992px) {
 
+.box-home{
+  display: flex;
+  align-self: center;
+  margin: auto;
+  padding: 30px 70px;
+}
 .box-home-img{
   display: inline-block;
-  transform: translateX(53vw);
+  margin: auto;
  
 }
 
 .box-titulos-capa{
+  margin: auto;
   display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-123%, -100%);
-  margin-right: 10vw;
-
 }
 
 #hardskills {
@@ -69,74 +70,75 @@
       
 }
 
-  /* VERSÃO PARA PC e TV */
+/* VERSÃO PARA PC e TV */
 
-  @media screen and (min-width: 992px){
+@media screen and (min-width: 992px){
 
-    .box-conteudo{
-      max-width: 900px;
-    }
-
-    .box-home-img{
-      display: inline-block;
-      transform: translateX(57vw);
-     
-    }
-    
-    .box-titulos-capa{
-      display: inline-block;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-150%, -100%);
-      margin-right: 10vw;
-    
-    }
-    
-    #hardskills {
-      display: inline-block;
-      width: 400px;
+.box-home{
+  display: flex;
+  align-self: center;
+  margin: auto;
+  padding: 30px 120px;
+}
+.box-home-img{
+  display: inline-block;
+  margin: auto;
   
-    }
-    
-    #softskills{
-      display: inline-block;
-      width: 400px;
-    }
-    
-    .all-skills{
-     display: flex;
-     align-self: center;
-     margin: auto;
-     width: 900px;
-    }
+}
 
-    .linha1-projeto{
-      display: flex;
-      align-self: center;
-      margin: auto;
-      width: 900px;
-    }
-    
-    .linha2-projeto{
-      display: flex;
-      align-self: center;
-      margin: auto;
-      width: 900px;
-    }
-    
-    .box-projeto{
-      display: inline-block;
-      width: 400px;
-      margin-left: 20px;
-      padding-right: 10px;
-    }
-    
-    .todos-projetos{
-      width: 900px;
-      margin: auto;
-    }
+.box-titulos-capa{
+  margin: auto;
+  display: inline-block;
+}
 
-    
-          
-    }
+#box-sobre{
+  max-width: 900px;
+}
+
+#hardskills {
+  display: inline-block;
+  width: 400px;
+
+}
+
+#softskills{
+  display: inline-block;
+  width: 400px;
+}
+
+.all-skills{
+  display: flex;
+  align-self: center;
+  margin: auto;
+  width: 900px;
+}
+
+.linha1-projeto{
+  display: flex;
+  align-self: center;
+  margin: auto;
+  width: 900px;
+}
+
+.linha2-projeto{
+  display: flex;
+  align-self: center;
+  margin: auto;
+  width: 900px;
+}
+
+.box-projeto{
+  display: inline-block;
+  width: 400px;
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+.todos-projetos{
+  width: 900px;
+  margin: auto;
+}
+
+
+      
+}

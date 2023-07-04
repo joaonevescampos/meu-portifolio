@@ -314,6 +314,8 @@ a{
     margin-bottom: 20px;
     color: var(--cor05);
     height: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .box-conteudo img{
