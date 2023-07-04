@@ -180,7 +180,7 @@ main p{
 .box-home{
     margin: auto;
     background-color: #222222;
-    padding: 20px;
+    padding: 40px;
 }
 
 .box-home-img{
@@ -259,7 +259,7 @@ main p{
   align-items: center;
   width: 300px;
 }
-.botao-abacate, .botao-cv, .botao-projeto{
+.botao-abacate, .botao-cv{
   background-color: #85D061;
   color: black;
   width: 120px;
@@ -273,6 +273,21 @@ main p{
   font-weight: 400;
   cursor: pointer;
   
+}
+
+.botao-projeto{
+  background-color: #222222;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border: none;
+  margin: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 400;
+  cursor: pointer;
 
 }
 
@@ -294,7 +309,22 @@ main p{
 
 
 .botao-abacate:hover, .botao-cv:hover{
-  background-color: white;
+  background-color: #8eff5a;
+  scale: 1.1;
+  transition: 1s;
+  border: solid .1px black;
+}
+
+
+.botao-projeto:hover{
+  background-color: black;
+  scale: 1.1;
+  transition: 1s;
+  border: solid .1px black;
+}
+
+
+.botao-codigo:hover, .btn-diminuir:hover, .btn-ler-mais:hover{
   scale: 1.1;
   transition: 1s;
   border: solid .1px black;
