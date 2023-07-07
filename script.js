@@ -36,3 +36,18 @@ document.querySelector(".menu-toggle").addEventListener("click", function() { do
             elemento.classList.toggle("imagem-ampliada");
             
         }
+
+        /*===== SCROLL REVEAL ANIMATION =====*/
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2000,
+            delay: 200,
+        //     reset: true
+        });
+
+        sr.reveal('.box-home-img',{delay: 400}); 
+        sr.reveal('.redes-sociais, .box-home-texto',{delay: 200}); 
+        sr.reveal('.box-conteudo',{delay: 400}); 
+        sr.reveal(' #hardskills',{ interval: 200}); 
+        sr.reveal('#softskills, #container-cv, .linha1-projeto, .linha2-projeto',{interval: 200}); 
