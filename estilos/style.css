@@ -36,15 +36,6 @@
     margin: 0;
     padding: 0;
 }
-
-.linha-colorida {
-    background-color: var(--cor-preto);
-    height: 3px;
-    width: 150px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 2px;
-  }
   
 
 /* ======= BODY =======*/
@@ -68,7 +59,7 @@ body{
 .menu-toggle:before, .menu-toggle:after{
     content: "";
     position: absolute;
-    background-color: rgb(170, 170, 170);
+    background-color: #aaaaaa;
     width: 30px;
     height: 3px;
     transition: transform 0.3s;
@@ -123,8 +114,6 @@ header{
     text-align: right;
     padding: 10px;
     color: white;
-    margin-left: 10px;
-    margin-top: 10px;
     z-index: 999;
 }
 
@@ -135,6 +124,16 @@ header span{
     font-size: 14px;
     margin: 0;
     color: white;
+}
+
+.lampada{
+  position: absolute;
+  left: 90%;
+  top: 0;
+  width: 40px;
+  margin: 10px;
+  cursor: pointer;
+
 }
 
 /* ======= MAIN =======*/
@@ -168,6 +167,26 @@ main h2{
 main p{
     font-size: 14px;
     margin: 30px;
+}
+
+/* ======= MODO ESCURO =======*/
+.modo-escuro{
+  background-color: #222222;
+  color: white;
+}
+
+.modo-escuro .box-projeto, .modo-escuro #hardskills, .modo-escuro #softskills{
+  background-color: #2e2e2eec;
+  color: white;
+}
+
+.modo-escuro .botao-projeto{
+  background-color: #85D061;
+  color: black;
+}
+
+.modo-escuro .botao-projeto:hover{
+  background-color: #6bfc28;
 }
 
 /* ======= HOME =======*/

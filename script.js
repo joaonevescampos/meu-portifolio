@@ -51,3 +51,25 @@ document.querySelector(".menu-toggle").addEventListener("click", function() { do
         sr.reveal('.box-conteudo',{delay: 400}); 
         sr.reveal(' #hardskills',{ interval: 200}); 
         sr.reveal('#softskills, #container-cv, .linha1-projeto, .linha2-projeto',{interval: 200}); 
+
+    //mudar Tema para escuro
+
+    botaoAlterarTema = document.getElementById("alterar-tema");
+    const main = document.querySelector("main");
+    const trocaDeTema = document.querySelector(".lampada");
+
+    botaoAlterarTema.addEventListener("click", () => {
+    const modoEscuroAtivo = main.classList.contains("modo-escuro");
+
+    if (modoEscuroAtivo){
+        main.classList.remove("modo-escuro");
+
+        trocaDeTema.setAttribute("src", "imagens/lampada-acesa.png");
+    }
+
+    else{
+        main.classList.add("modo-escuro");
+        trocaDeTema.setAttribute("src","imagens/lampada-apagada.png")
+    }
+    
+});
