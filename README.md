@@ -1,4 +1,4 @@
-# Meu Portifólio
+# Meu Portfólio
  *Bem-vindo ao projeto - "Meu Portifólio"!*
  
  Este foi um projeto feito usando as tecnologias __HTML, CSS e JavaScript.__ Foi criado meu portifólio profissional onde mostra minhas habilidades tecnológicas, minhas experiências, currículo, redes sociais e projetos mais significativos. 
