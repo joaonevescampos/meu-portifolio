@@ -401,9 +401,20 @@ a{
   
 }
 
+.img-softskills{
+  width: 200px;
+}
+
+.container-img-softskills{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .hardskills-icones{
 
   text-align: center;
+  padding: 30px;
 }
 
 .hardskills-icone{
