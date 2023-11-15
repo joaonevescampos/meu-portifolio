@@ -1,0 +1,87 @@
+:root{
+  --cor-fundo:#07000B;
+  --cor-fundo2: #fafafa;
+  --cor-primaria:#7731E8;
+}
+
+#botao-capa{
+    margin: auto;
+    align-items: center;
+    width: 300px;
+  }
+  .botao-primario, .botao-cv{
+    background-color: var(--cor-primaria);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-weight: 400;
+    cursor: pointer;
+    
+  }
+  
+  .botao-projeto{
+    background-color: var(--cor-primaria);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-weight: 400;
+    cursor: pointer;
+  
+  }
+  
+  .btn-ler-mais, .btn-diminuir, .botao-codigo{
+    background-color: white;
+    color: black;
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin-left: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
+    border: solid 1px black;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 8pt;
+    cursor: pointer;
+  }
+  
+  
+  .botao-abacate:hover, .botao-cv:hover{
+    background-color: var(--cor-primaria);
+    scale: 1.1;
+    transition: 1s;
+    border: solid .1px black;
+  }
+  
+  
+  .botao-projeto:hover{
+    background-color: black;
+    scale: 1.1;
+    transition: 1s;
+    border: solid .1px black;
+  }
+  
+  
+  .botao-codigo:hover, .btn-diminuir:hover, .btn-ler-mais:hover{
+    scale: 1.1;
+    transition: 1s;
+    border: solid .1px black;
+  }
+  
+  a{
+      text-decoration: none ;   
+      color: black;
+  }
+  

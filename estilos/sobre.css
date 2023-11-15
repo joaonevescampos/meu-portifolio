@@ -1,0 +1,25 @@
+/* ======= SOBRE =======*/
+
+.box-conteudo{
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: var(--cor05);
+  height: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.box-conteudo img{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  box-shadow: inset 2px 2px 10px #000000ec;
+  
+}
+
+.texto-completo{
+  display: none;
+}

@@ -1,0 +1,48 @@
+/* ======= PROJETOS =======*/
+.titulo-projeto{
+    text-align: center;
+    margin: auto;
+  }
+  
+  .projeto img{
+      margin: auto;
+      
+  }
+  
+  .box-projeto{
+    width: 92vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+  }
+  
+  .img-projeto{
+    display: flex;
+    align-self: center;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  
+  .descricao-projeto p{
+    display: block;
+    padding-bottom: 20px;
+  }
+  
+  .imagem-escura {
+    position: relative;
+    display: inline-block;
+  }
+
+  .imagem-escura:hover::before {
+    opacity: 0; 
+  }
+  

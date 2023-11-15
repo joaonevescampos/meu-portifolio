@@ -1,0 +1,46 @@
+/* ===== SKILLS =====*/
+#hardskills{
+    width: 92vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.308);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+  }
+  
+  #softskills{
+    width: 92vw;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.212);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+  }
+  
+  .img-softskills{
+    width: 200px;
+  }
+  
+  .container-img-softskills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hardskills-icones{
+  
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .hardskills-icone{
+    height: 30px;
+    width: 30px;
+    margin-right: 15px ;
+   
+  }

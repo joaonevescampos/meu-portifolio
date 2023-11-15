@@ -1,0 +1,81 @@
+:root{
+  --cor-fundo:#07000B;
+  --cor-fundo2: #fafafa;
+  --cor-primaria:#7731E8;
+  --cor-hover: #9660ec;
+}
+
+.box-home{
+    margin: auto;
+    background-color: var(--cor-fundo);
+    padding: 40px;
+}
+
+.box-home-img{
+  background-color: var(--cor-primaria);
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#foto-perfil{
+    display: flex;
+    align-self: center;
+    width: 255px;
+    margin: auto;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+    
+}
+
+.box-home-texto{
+    text-align: center;
+    margin: auto;
+}
+
+.box-home-texto h1, h2{
+    color: white;
+}
+
+.dev-frontend{
+    font-size: 28pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+}
+
+.meu-nome{
+    font-size: 14pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+}
+
+.redes-sociais{
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.icones-redes-sociais{
+  font-size: 30px;
+  color: var(--cor-primaria);
+  padding: 10px;
+}
+
+.icones-redes-sociais:hover{
+  transform: scale(1.2);
+  color: var(--cor-hover);
+  transition: transform 0.5s;
+}

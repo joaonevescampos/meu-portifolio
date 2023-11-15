@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@200;400;700&display=swap');
+
+
+/*===== VARIABLES CSS =====*/
+
+:root{
+    --body-font: 'Poppins', sans-serif;
+    --cor-fundo:#07000B;
+    --cor-fundo2: #fafafa;
+    --cor-primaria:#7731E8;
+    --cor-fundo-modo-escuro: #0f0c14;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= BODY =======*/
+
+body{
+    font-family: Poppins, Arial, "sans-serif";
+    font-size: 12px;
+    background-color: var(--cor-fundo);
+    margin: 0;
+
+}
+
+/* ======= HEADER =======*/
+
+header{
+    position: fixed;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    z-index: 999;
+}
+
+header span{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  left: 85%;
+  top: 5%;
+  cursor: pointer;
+  color: var(--cor-primaria);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* .material-symbols-outlined {
+    color: white;
+
+} */
+
+/* ======= MAIN =======*/
+main{
+    background-color: var(--cor-fundo2);
+    font-size: 12px;
+    margin: auto;
+    text-align: left;
+}
+
+main h1{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 30px;
+    padding-top: 10px;
+
+
+}
+
+main h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 200px;
+    text-align: left;
+    margin: auto;
+}
+
+main p{
+    font-size: 14px;
+    margin: 30px;
+}
+
+/* ======= FOOTER =======*/
+footer{
+    background-color: var(--cor-fundo);
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+ 
+}
+
+.icones-footer{
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 200;
+
+}
+

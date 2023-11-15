@@ -1,0 +1,23 @@
+
+.modo-escuro{
+    background-color: var(--cor-fundo);
+    color: white;
+  }
+  
+  .modo-escuro .box-projeto, .modo-escuro #hardskills, .modo-escuro #softskills, .modo-escuro #container-cv{
+    background-color: var(--cor-fundo-modo-escuro);
+    color: white;
+  }
+  
+  .modo-escuro .botao-projeto{
+    background-color: var(--cor-primaria);
+    color: white;
+  }
+  
+  .modo-escuro .botao-projeto:hover{
+    background-color: var(--cor-hover);
+  }
+
+  #apagada{
+    color: rgb(92, 92, 91);
+  }

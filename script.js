@@ -1,6 +1,9 @@
-document.querySelector(".menu-toggle").addEventListener("click", function() { document.querySelector(".menu").classList.toggle("open");
+document.querySelector(".menu-toggle")
+    .addEventListener("click", function () {
+        document.querySelector(".menu")
+        .classList.toggle("open");
 });
-                // Selecionar todos os botões de "Ler Mais"
+        // Selecionar todos os botões de "Ler Mais"
         const btnsLerMais = document.querySelectorAll('.btn-ler-mais');
 
         // Iterar sobre cada botão e adicionar o evento de clique
@@ -56,20 +59,21 @@ document.querySelector(".menu-toggle").addEventListener("click", function() { do
 
     botaoAlterarTema = document.getElementById("alterar-tema");
     const main = document.querySelector("main");
-    const trocaDeTema = document.querySelector(".lampada");
+    const trocaDeTema = document.querySelector(".material-symbols-outlined");
 
     botaoAlterarTema.addEventListener("click", () => {
     const modoEscuroAtivo = main.classList.contains("modo-escuro");
 
     if (modoEscuroAtivo){
         main.classList.remove("modo-escuro");
-
-        trocaDeTema.setAttribute("src", "imagens/lampada-acesa.png");
+        // trocaDeTema.setAttribute("src", "imagens/lampada-acesa.png");
+        trocaDeTema.innerHTML = `<span class="material-symbols-outlined">lightbulb</span>`
     }
 
     else{
         main.classList.add("modo-escuro");
-        trocaDeTema.setAttribute("src","imagens/lampada-apagada.png")
+        // trocaDeTema.setAttribute("src", "imagens/lampada-apagada.png")
+        trocaDeTema.innerHTML = `<span class="material-symbols-outlined" id="apagada">light_off</span>`
     }
     
 });

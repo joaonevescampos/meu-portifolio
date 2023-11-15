@@ -1,0 +1,59 @@
+/* ============ MENU ============= */
+
+.menu-toggle{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-toggle:before, .menu-toggle:after{
+    content: "";
+    position: absolute;
+    background-color: #aaaaaa;
+    width: 30px;
+    height: 3px;
+    transition: transform 0.3s;
+}
+
+.menu-toggle:before {
+    left: 15px;
+    transform: translateY(10px);
+  }
+  
+  .menu-toggle:after {
+    left: 15px;
+    transform: translateY(25px);
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.open {
+    display: block;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.808);
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu a:hover{
+    font-weight: 700;
+    color: #fff;
+  }
