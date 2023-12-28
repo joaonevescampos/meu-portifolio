@@ -21,7 +21,7 @@
 
 body{
     font-family: Poppins, Arial, "sans-serif";
-    font-size: 12px;
+    font-size: 12pt;
     background-color: var(--cor-fundo);
     margin: 0;
 
@@ -109,7 +109,7 @@ footer{
 
 footer > p{
     text-align: center;
-    font-size: 10px;
+    font-size: 8pt;
     font-weight: 200;
 
 }
