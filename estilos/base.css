@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@200;400;700&display=swap');
 
-
 /*===== VARIABLES CSS =====*/
 
 :root{
     --body-font: 'Poppins', sans-serif;
     --cor-fundo:#07000B;
     --cor-fundo2: #fafafa;
-    --cor-primaria:#7731E8;
-    --cor-fundo-modo-escuro: #0f0c14;
+    --cor-primaria:#c09bfc;
+    --cor-hover: #aa82eb;
+    --cor-fundo-modo-escuro: #1a1424;
+    --cor-botao: #8240eb;
 }
 
 *{
@@ -76,8 +77,6 @@ main h1{
     text-align: left;
     margin-left: 30px;
     padding-top: 10px;
-
-
 }
 
 main h2{

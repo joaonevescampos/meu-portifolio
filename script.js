@@ -66,13 +66,11 @@ document.querySelector(".menu-toggle")
 
     if (modoEscuroAtivo){
         main.classList.remove("modo-escuro");
-        // trocaDeTema.setAttribute("src", "imagens/lampada-acesa.png");
         trocaDeTema.innerHTML = `<span class="material-symbols-outlined">lightbulb</span>`
     }
 
     else{
         main.classList.add("modo-escuro");
-        // trocaDeTema.setAttribute("src", "imagens/lampada-apagada.png")
         trocaDeTema.innerHTML = `<span class="material-symbols-outlined" id="apagada">light_off</span>`
     }
     

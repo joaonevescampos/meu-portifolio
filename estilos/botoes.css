@@ -1,32 +1,5 @@
-:root{
-  --cor-fundo:#07000B;
-  --cor-fundo2: #fafafa;
-  --cor-primaria:#7731E8;
-}
-
-#botao-capa{
-    margin: auto;
-    align-items: center;
-    width: 300px;
-  }
-  .botao-primario, .botao-cv{
-    background-color: var(--cor-primaria);
-    color: white;
-    width: 120px;
-    height: 40px;
-    border: none;
-    margin: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.116);
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 8pt;
-    font-weight: 400;
-    cursor: pointer;
-    
-  }
-  
-  .botao-projeto{
-    background-color: var(--cor-primaria);
+.botao-primario, .botao-cv, .botao-projeto{
+    background-color: var(--cor-botao);
     color: white;
     width: 120px;
     height: 40px;
@@ -58,21 +31,11 @@
   }
   
   
-  .botao-abacate:hover, .botao-cv:hover{
-    background-color: var(--cor-primaria);
+  .botao-primario:hover, .botao-cv:hover,  .botao-projeto:hover{
+    background-color: var(--cor-hover);
     scale: 1.1;
     transition: 1s;
-    border: solid .1px black;
   }
-  
-  
-  .botao-projeto:hover{
-    background-color: black;
-    scale: 1.1;
-    transition: 1s;
-    border: solid .1px black;
-  }
-  
   
   .botao-codigo:hover, .btn-diminuir:hover, .btn-ler-mais:hover{
     scale: 1.1;
@@ -82,6 +45,7 @@
   
   a{
       text-decoration: none ;   
-      color: black;
+      color: white;
+      font-weight: bold;
   }
   

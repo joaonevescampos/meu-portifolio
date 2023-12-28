@@ -9,15 +9,6 @@
     color: white;
   }
   
-  .modo-escuro .botao-projeto{
-    background-color: var(--cor-primaria);
-    color: white;
-  }
-  
-  .modo-escuro .botao-projeto:hover{
-    background-color: var(--cor-hover);
-  }
-
   #apagada{
     color: rgb(92, 92, 91);
   }
